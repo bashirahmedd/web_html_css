@@ -1,0 +1,29 @@
+nav h1 {
+    margin-left: 1rem;
+    text-wrap: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    font-weight: 700;
+}
+
+nav ul li>a {
+    color: white;
+    text-decoration: none;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

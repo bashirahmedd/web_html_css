@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity Example</title>
+    <style>
+        #myElement {
+            color: green; /* Specificity: 1-0-0 - WINS!! */
+        }
+
+        .bodyClass .sectionClass .parentClass [id="myElement"] {
+            color: yellow; /* Specificity: 0-4-0 */
+        }
+    </style>
+</head>
+<body>
+    <div class="bodyClass">
+        <div class="sectionClass">
+            <div class="parentClass">
+                <span id="myElement">This is my element.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

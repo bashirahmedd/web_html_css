@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity Example</title>
+    <style>
+        #myElement {
+            color: yellow; /* Specificity: 1-0-0 */
+        }
+
+        #myApp [id="myElement"] {
+            color: green; /* Specificity: 1-1-0 - WINS!! */
+        }
+    </style>
+</head>
+<body>
+    <div id="myApp">
+        <span id="myElement">This is my element.</span>
+    </div>
+</body>
+</html>

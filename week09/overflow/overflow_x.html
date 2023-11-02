@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .section-flex {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        p {
+            width: 10rem;
+            height: 20rem;
+            border: 2px solid black;
+            text-wrap: nowrap;
+        }
+
+        p.visible {
+            overflow-x: visible;
+        }
+
+        p.hidden {
+            overflow-x: hidden;
+        }
+
+        p.clip {
+            overflow-x: clip;
+            overflow-clip-margin: 1em;
+        }
+
+        p.scroll {
+            overflow-x: scroll;
+        }
+
+        p.auto {
+            overflow-x: auto;
+        }
+
+
+        code {
+            font-weight: bold;
+            font-size: x-large;
+        }
+    </style>
+    <title>overflow-x</title>
+</head>
+
+<body>
+    <section class="section-flex">
+        <div>
+            <code>visible</code>
+            <p class="visible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero quae cum reiciendis aliquam
+                accusantium
+                quod reprehenderit nulla officiis consectetur laudantium, voluptates molestias recusandae dignissimos
+                voluptatem ipsam sunt, velit voluptas.<br />
+                Molestiae dicta fugiat praesentium doloribus a distinctio totam, illo animi quis? Aliquam dolores
+                possimus
+                quas sit sed eligendi quidem explicabo, adipisci illo nulla, iste omnis rem impedit modi, deleniti
+                sequi.
+                Quos quidem nam vel nisi beatae consequatur quae maxime dignissimos unde, reiciendis cum inventore ea.
+                Voluptates, deserunt cum aliquam facere numquam velit? Deleniti, exercitationem praesentium. Quidem
+                nequep
+                minus rerum ipsum.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-flex">
+        <div>
+            <code>hidden</code>
+            <p class="hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero quae cum reiciendis aliquam
+                accusantium
+                quod reprehenderit nulla officiis consectetur laudantium, voluptates molestias recusandae dignissimos
+                voluptatem ipsam sunt, velit voluptas.<br />
+                Molestiae dicta fugiat praesentium doloribus a distinctio totam, illo animi quis? Aliquam dolores
+                possimus
+                quas sit sed eligendi quidem explicabo, adipisci illo nulla, iste omnis rem impedit modi, deleniti
+                sequi.
+                Quos quidem nam vel nisi beatae consequatur quae maxime dignissimos unde, reiciendis cum inventore ea.
+                Voluptates, deserunt cum aliquam facere numquam velit? Deleniti, exercitationem praesentium. Quidem
+                neque
+                minus rerum ipsum."
+            </p>
+        </div>
+
+        <div>
+            <code>clip</code>
+            <p class="clip">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero quae cum reiciendis aliquam
+                accusantium
+                quod reprehenderit nulla officiis consectetur laudantium, voluptates molestias recusandae dignissimos
+                voluptatem ipsam sunt, velit voluptas.<br />
+                Molestiae dicta fugiat praesentium doloribus a distinctio totam, illo animi quis? Aliquam dolores
+                possimus
+                quas sit sed eligendi quidem explicabo, adipisci illo nulla, iste omnis rem impedit modi, deleniti
+                sequi.
+                Quos quidem nam vel nisi beatae consequatur quae maxime dignissimos unde, reiciendis cum inventore ea.
+                Voluptates, deserunt cum aliquam facere numquam velit? Deleniti, exercitationem praesentium. Quidem
+                neque
+                minus rerum ipsum.
+            </p>
+        </div>
+
+        <div>
+            <code>scroll</code>
+            <p class="scroll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero quae cum reiciendis aliquam
+                accusantium
+                quod reprehenderit nulla officiis consectetur laudantium, voluptates molestias recusandae dignissimos
+                voluptatem ipsam sunt, velit voluptas.<br />
+                Molestiae dicta fugiat praesentium doloribus a distinctio totam, illo animi quis? Aliquam dolores
+                possimus
+                quas sit sed eligendi quidem explicabo, adipisci illo nulla, iste omnis rem impedit modi, deleniti
+                sequi.
+                Quos quidem nam vel nisi beatae consequatur quae maxime dignissimos unde, reiciendis cum inventore ea.
+                Voluptates, deserunt cum aliquam facere numquam velit? Deleniti, exercitationem praesentium. Quidem
+                neque
+                minus rerum ipsum.
+            </p>
+        </div>
+
+        <div>
+            <code>auto</code>
+            <p class="auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero quae cum reiciendis aliquam
+                accusantium
+                quod reprehenderit nulla officiis consectetur laudantium, voluptates molestias recusandae dignissimos
+                voluptatem ipsam sunt, velit voluptas.<br />
+                Molestiae dicta fugiat praesentium doloribus a distinctio totam, illo animi quis? Aliquam dolores
+                possimus
+                quas sit sed eligendi quidem explicabo, adipisci illo nulla, iste omnis rem impedit modi, deleniti
+                sequi.
+                Quos quidem nam vel nisi beatae consequatur quae maxime dignissimos unde, reiciendis cum inventore ea.
+                Voluptates, deserunt cum aliquam facere numquam velit? Deleniti, exercitationem praesentium. Quidem
+                neque
+                minus rerum ipsum.
+            </p>
+        </div>
+
+    </section>
+</body>
+
+</html>

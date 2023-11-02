@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Example</title>
+    <style>
+        :root {
+            --cheight: 20em;
+            --cwidth: 100vw;
+            --cmargin: .5em;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: radial-gradient( #ada026, #b20a2c);
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: radial-gradient( circle, #ada026, #b20a2c);
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Default Shapes</h1>
+    <div class="container1">
+        <h1>background-image: radial-gradient(eclipse,
+            <span style="background-color: #ada026;color:black;">#ada026</span>,
+            <span style="background-color: #b20a2c;color:white;">#b20a2c</span>,
+            );
+        </h1>
+    </div>
+    <div class="container2">
+        <h1>background-image: radial-gradient(circle,
+            <span style="background-color: #ada026;color:black;">#ada026</span>,
+            <span style="background-color: #b20a2c;">#b20a2c</span> );
+        </h1>
+    </div>
+</body>
+
+</html>

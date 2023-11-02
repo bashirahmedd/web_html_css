@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .warning {
+            font-weight: bold;
+        }
+
+        .urgent {
+            font-style: italic;
+        }
+
+        .warning.urgent {
+            background: silver;
+        }
+    </style>
+    <title>Text Styles Example</title>
+</head>
+
+<body>
+    <p class="urgent warning">When handling plutonium, care must be taken.</p>
+    <p class="warning urgent">When handling plutonium, care must be taken.</p>
+    
+    <p class="warning">When handling plutonium, care must be taken.</p>
+
+    <p>With plutonium, <span class="warning">the implosion is very real</span>. This can be accomplished
+        by keeping the various masses separate.</p>
+
+</body>
+
+</html>

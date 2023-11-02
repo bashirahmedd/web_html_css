@@ -1,0 +1,62 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../images/hero_1024x1024.jpg");
+  height: 600px;
+  background-size: cover;
+  color: #fff;
+}
+#hero h1 {
+  margin-left: 1rem;
+}
+#hero .container {
+  padding-top: 1em;
+  max-width: 90em;
+  margin: 0 auto;
+}
+
+/*nav bar start*/
+nav#hero_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav#hero_nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav#hero_nav ul li {
+  margin: 0 1rem;
+  font-weight: 700;
+}
+nav#hero_nav ul li a {
+  color: white;
+  text-decoration: none;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*nav bar end*/
+.content {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.content a {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background-color: #2f70d8;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.content a:hover {
+  background-color: #08347a;
+}/*# sourceMappingURL=style.css.map */

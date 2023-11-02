@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        [data-category~="fruit"] {
+            color: green;
+            font-size: 3rem;
+        }
+
+        [data-category~="vegetable"] {
+            font-weight: bold;
+            color: orange;
+        }
+    </style>
+    <title>Attribute Selector Example</title>
+</head>
+<body>
+    <p data-category="fruit">Apple</p>
+    <p data-category="vegetable">Carrot</p>
+    <p data-category="fruit vegetable">Tomato</p>
+    <p data-category="dairy">Milk</p>
+</body>
+</html>

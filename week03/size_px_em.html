@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .content-container{
+        font-size: 20px;
+      }
+      .content {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="content-container">
+      Parent , font-size 20px
+      <div id="outerChild" class="content">
+        Outer child , the computed font-size of the "outerChild" will be 30px (1.5*20px)
+        <div id="innerChild" class="content">
+          Inner child , the computed font-size of the "innerChild" will be 45px (1.5*30px)
+        </div>
+      </div>
+    </div>
+    <script>
+      var htmlFont=window.getComputedStyle(document.getElementsByTagName("HTML")[0]).fontSize
+      console.log("HTML Font Size :" + htmlFont);
+      var containerFont=window.getComputedStyle(document.getElementById("container")).fontSize
+      console.log("Container Font Size :" + containerFont);
+      var outerChild=window.getComputedStyle(document.getElementById("outerChild")).fontSize
+      console.log("outerChild Font Size :" + outerChild);
+      var innerChild=window.getComputedStyle(document.getElementById("innerChild")).fontSize
+      console.log("innerChild Font Size :" + innerChild);
+    </script>
+  </body>
+</html>

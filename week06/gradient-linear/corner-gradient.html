@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Example</title>
+    <style>
+        :root {
+            --cheight: 10em;
+            --cwidth: 100vw;
+            --cmargin: .5em;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(to right top, #051937, #a8eb12);
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(to right bottom, #051937, #920e5f);
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(to left bottom, #051937, #83630d);
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(to left top, #051937, #75171c);
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>background-image: linear-gradient(to right top,
+            <span style="background-color: #051937;color:white;">#051937</span> ,
+            <span style="background-color: #a8eb12;">#a8eb12</span> 100%);
+        </h1>
+    </div>
+    <div class="container2">
+        <h1>background-image: linear-gradient(to right bottom,
+            <span style="background-color: #051937;color:white;">#051937</span> ,
+            <span style="background-color: #920e5f;">#920e5f</span> 100%);
+        </h1>
+    </div>
+    <div class="container3">
+        <h1>background-image: linear-gradient(to left bottom,
+            <span style="background-color: #051937;color:white;">#051937</span> ,
+            <span style="background-color: #83630d;">#83630d</span> 100%);
+        </h1>
+    </div>
+    <div class="container4">
+        <h1>background-image: linear-gradient(to left top,
+            <span style="background-color: #051937;color:white;">#051937</span> ,
+            <span style="background-color: #75171c;">#75171c</span> );
+        </h1>
+    </div>
+</body>
+
+</html>

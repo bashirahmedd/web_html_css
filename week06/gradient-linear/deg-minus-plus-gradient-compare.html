@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Example</title>
+    <style>
+        :root {
+            --cheight: 10em;
+            --cwidth: 50vw;
+            --cmargin: .5em;
+        }
+
+        span {
+            font-size: 1em;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--cmargin);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container11 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container21 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(45deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container31 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(90deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container41 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(135deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container51 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(180deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+            margin-top: var(--cmargin);
+            text-align: center;
+            background-image: linear-gradient(-0deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(-45deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(-90deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(-135deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+
+        .container5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--cheight);
+            width: var(--cwidth);
+
+            text-align: center;
+            background-image: linear-gradient(-180deg, #22c1c3 0%, #fdbb2d 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <span>background-image: linear-gradient(-0deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container11">
+        <span>background-image: linear-gradient(0deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container2">
+        <span>background-image: linear-gradient(-45deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container21">
+        <span>background-image: linear-gradient(45deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container3">
+        <span>background-image: linear-gradient(-90deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container31">
+        <span>background-image: linear-gradient(90deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container4">
+        <span>background-image: linear-gradient(-135deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container41">
+        <span>background-image: linear-gradient(135deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container5">
+        <span>background-image: linear-gradient(-180deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+    <div class="container51">
+        <span>background-image: linear-gradient(180deg,
+            <span style="background-color: #22c1c3;color:black;">#22c1c3</span> 0%,
+            <span style="background-color: #fdbb2d;">#fdbb2d</span> 100%);
+        </span>
+    </div>
+</body>
+
+</html>

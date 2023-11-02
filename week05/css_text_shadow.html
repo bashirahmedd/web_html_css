@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            /*  offset-x | offset-y */
+            text-shadow: 2px 2px;
+        }
+
+        .ex1 {
+            /*  offset-x | offset-y | color */
+            text-shadow: 2px 2px orange;
+        }
+
+        .ex2 {
+            /* color | offset-x | offset-y */
+            text-shadow:  red 2px 2px 10px;
+        }
+
+        .white-text-with-blue-shadow {
+            /* multiple shadows */
+            text-shadow:
+                1px 1px 2px black,
+                0 0 1em blue,
+                0 0 0.2em blue;
+            color: white;
+            font:
+                1.5em Georgia,
+                serif;
+        }
+    </style>
+    <title>Line Height</title>
+</head>
+
+<body>
+    <h1>Examples of Text-shadow effect.</h1>
+
+    <h1 class="ex1">Text-shadow with color</h1>
+
+    <h1 class="ex2">Text-shadow with blur effect.</h1>
+
+    <p class="white-text-with-blue-shadow">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-letter {
+            color: red;
+        }
+
+        p:first-of-type::first-letter {
+            font-size: 200%;
+        }
+
+        p:last-of-type {
+            font-size: 0.75em;
+            font-style: italic;
+        }
+    </style>
+    <title>:first-letter Example</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida tempus tristique.</p>
+    <p>Maecenas ut nisi eu ex varius convallis nec vel ligula. Nunc vel purus euismod, efficitur augue.</p>
+</body>
+
+</html>

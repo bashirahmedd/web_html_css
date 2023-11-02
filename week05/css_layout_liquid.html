@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liquid Layout with Two Columns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Column 1</h1>
+            <p>This is the left column of a liquid layout with two columns. The content and design adapt and scale based on the user's device or screen size.</p>
+        </div>
+        <div class="column">
+            <h1>Column 2</h1>
+            <p>This is the right column of a liquid layout with two columns. The content and design adapt and scale based on the user's device or screen size.</p>
+        </div>
+    </div>
+</body>
+</html>

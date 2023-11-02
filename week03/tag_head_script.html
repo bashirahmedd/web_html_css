@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function findCollege() {
+            var college=" Toronto Business College";
+            var prompt=document.getElementById("p").textContent;
+            document.getElementById("p").textContent = prompt + college;
+        }  
+    </script>
+    <script src="scripts/alert.js" type="text/javascript"></script>  
+</head>
+
+<body>
+    <h2>Script within Head element</h2>
+    <p id="p">Your College is</p>
+    <button type="button" onclick="findCollege()">College</button>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity Example</title>
+    <style>
+        input.myClass {
+            color: yellow; /* Specificity: 0-1-1 */
+        }
+
+        :root input {
+            color: green; /* Specificity: 0-1-1 WINS because it comes later */
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="myClass" value="Input Field">
+</body>
+</html>

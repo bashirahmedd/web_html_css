@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* container */
+        .responsive-three-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* columns */
+        .responsive-three-columns>* {
+            width: 100%;
+            padding: .25rem;
+        }
+
+        /* tablet breakpoint */
+        @media (min-width:768px) {
+            .responsive-three-columns>* {
+                width: 32%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-three-columns">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
