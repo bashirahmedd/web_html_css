@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Date Field</h2>
+
+    <form action="/action_page.php">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Date Field Restrictions</h2>
+
+    <form action="/action_page.php">
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Local Date Field</h2>
+
+    <form action="/action_page.php">
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Month Field</h2>
+    <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+    </form>
+
+
+    <h1>Show a Time Input Control</h1>
+
+    <form action="/action_page.php">
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Display a Week Input Control</h1>
+
+    <form action="/action_page.php">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

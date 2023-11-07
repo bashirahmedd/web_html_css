@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Uploading with Multer</title>
+  <style>
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      margin: .5rem 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/uploadfile" enctype="multipart/form-data" method="post">
+    <fieldset>
+      <legend>File Uploader</legend>
+      <input type="file" name="myFile" /><br>
+      <input type="submit" value="Upload a file" />
+    </fieldset>
+  </form>
+</body>
+
+</html>

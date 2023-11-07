@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="http://localhost:8080">
+    <title>Dynamic Data Exchange</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        form>div {
+            margin-bottom: .5rem;
+        }
+    </style>
+    <script>
+        function onclickhandler(ev) {
+            alert("button is clicked");
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <h2>Dynamic Data Exchange</h2>
+    <ul>
+        <li>method="post"</li>
+        <li>enctype="application/x-www-form-urlencoded"</li>
+        <li>action="/single_input"</li>
+    </ul>
+    <form action="/single_input" target="_self" method="post" enctype="application/x-www-form-urlencoded">
+
+            <div>
+                <label for="pmsg">Post Message:</label>
+                <input type="text" id="pmsg" required name="pmsg" size="50" value="">
+            </div>
+            <div>
+                <button type="submit"><i class="fa fa-paper-plane fa-1"></i>&nbsp;Button Submit</button>
+                <button type="reset"><i class="fa fa-eraser fa-1"></i>&nbsp;Button Reset</button>
+                <button type="button" onclick="onclickhandler(event)">Just a button!</button>
+            </div>
+  
+    </form>
+
+
+
+</body>
+
+</html>

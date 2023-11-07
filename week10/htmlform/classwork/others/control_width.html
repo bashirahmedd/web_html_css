@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        article {
+            max-width: 50%;
+            background: #fff;
+            padding: 20px 20px 0;
+            font-size: 18px;
+            height: 270px;
+            overflow: hidden;
+            transition: max-width 1s;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        article.open {
+            max-width: 90%;
+        }
+
+        button {
+            background: #0e0b22;
+            color: #fff;
+            padding: 0.6rem;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #1e1d25;
+        }
+    </style>
+
+</head>
+
+<body>
+    <article id="content">
+        <p>
+            freeCodeCamp is one of the best platforms to learn how to code.
+            freeCodeCamp has a detailed curriculum that will take you from zero to
+            hero in web development, software engineering, machine learning, and
+            many more.
+        </p>
+
+        <p>
+            freeCodeCamp also has a YouTube channel containing over 1000 videos on
+            web development, software engineering, machine learning, data science,
+            freelance web development, database administration, and pretty more
+            anything related to tech. To get updates when videos are uploaded, you
+            need to subscribe to the channel and turn on notifications. You can also
+            follow freeCodeCamp on Twitter, where links to well written articles and
+            videos are tweeted daily.
+        </p>
+
+        <p>
+            Since no one has to pay to learn how to code on freeCodeCamp,
+            freeCodeCamp runs on voluntary donations from donors all around the
+            world in order to pay employees and maintain servers. If you are
+            generous enough consider joining the donors.
+        </p>
+    </article>
+
+    <button id="read-more">Show more</button>
+    <script>
+
+        const article = document.querySelector("#content");
+        const button = document.querySelector("#read-more");
+
+        button.addEventListener("click", readMore);
+
+        function readMore() {
+            if (article.className == "open") {
+                // Read less
+                article.className = "";
+                button.innerHTML = "Show more";
+            } else {
+                article.className = "open";
+                button.innerHTML = "Show less";
+            }
+        }
+    </script>
+</body>
+
+</html>
