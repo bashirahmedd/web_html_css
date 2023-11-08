@@ -39,7 +39,7 @@ app.post("/login", urlencodedParser, (req, res) => {
         method: 'POST',
         msg: 'Hurrah! Login is successful',
         username1: req.body.username1,
-        pwd: req.body.pwd
+        pwd: '****************'
     });
 });
 
