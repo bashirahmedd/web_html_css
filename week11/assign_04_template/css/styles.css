@@ -4,8 +4,8 @@ body {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-        url('../images/college.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.2)),
+        url('../images/Hero-Classroom.jpg');
     height: 600px;
     background-size: cover;
     color: #fff;
