@@ -1,0 +1,49 @@
+<h3 class="title">Apply for International Admissions</h3>
+<div class="block content">
+    Personal Information
+</div>
+
+<form action="">
+
+    <label class="label">Title</label>
+    <select name="ddlTitle" id="ddlTitle" tabindex="1">
+        <option selected="selected" value="0">Undeclared</option>
+        <option value="1">Mr.</option>
+        <option value="2">Ms.</option>
+        <option value="3">Mrs.</option>
+        <option value="4">Miss</option>
+    </select>
+
+    <label class="label">* Surname</label>
+    <input name="tbSurname" type="text" maxlength="60" id="tbSurname" tabindex="2" class="input" required="">
+
+    <label class="label">Previous Surname</label>
+    <input name="tbPreviousSurname" type="text" maxlength="60" id="tbPreviousSurname" tabindex="3" class="input">
+
+    <label class="label">* First Name</label>
+    <input name="tbFirstName" type="text" maxlength="60" id="tbFirstName" tabindex="4" class="input" minlength="2"
+        required="">
+
+    <label class="label">Second Name</label>
+    <input name="tbSecondName" type="text" maxlength="60" id="tbSecondName" tabindex="5" class="input">
+
+    <label class="label">* Gender</label>
+    <select name="ddlGender" id="ddlGender" tabindex="6" required="">
+        <option selected="selected" value="F">Female</option>
+        <option value="M">Male</option>
+        <option value="N">Undeclared</option>
+    </select>
+
+    <label class="label">* Date of Birth</label>
+    <input name="tbDateOfBirth" maxlength="10" id="tbDateOfBirth" tabindex="7" class="input" type="date" minlength="8"
+        required="" max="2007-11-10">
+
+    <label class="label">* Email Address</label>
+    <input name="tbEmail" maxlength="50" id="tbEmail" tabindex="8" class="input" minlength="5" type="email"
+        required=""><br>
+    <input name="tbRetypeEmail" maxlength="50" id="tbRetypeEmail" tabindex="9" class="input" type="email"
+        placeholder="Retype email address." required="">
+
+    <button  id="mailing_address" onclick="onclick_loadform(event)">Next</button>
+
+</form>
