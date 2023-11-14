@@ -1,14 +1,14 @@
 $(document).ready(function () {
     console.log('form loader called');
     // $("#home-nav").load('../../components/child-l1.html');
-    load_frag('apply_for_international.html');
+    load_frag('components/apply_for_international.html');
 });
 
 function onclick_loadform(event) {
     event.preventDefault();
     const form_id = $(event.target).attr("id");
     console.log(form_id);
-    const fname =  form_id + '.html';
+    const fname ='components/'+  form_id + '.html';
     debugger;
     load_frag(fname)
 }
@@ -24,6 +24,7 @@ function load_frag(filename){
     });
 }
 
-function luckyone(){
+function luckyone(event){
+    event.preventDefault();
     alert("You are lucky to reach this far....");
 }

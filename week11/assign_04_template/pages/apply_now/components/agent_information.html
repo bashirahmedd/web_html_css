@@ -1,0 +1,59 @@
+<h3 class="title">Apply for International Admissions</h3>
+<div class="notify">
+    Agent Information (if applicable)
+</div>
+
+<form action="">
+    <label class="label">Agency</label>
+    <input name="tbAgency" type="text" maxlength="200" id="tbAgency" tabindex="1" class="input">
+
+    <label class="label">Agent Name</label>
+    <input name="tbAgentName" type="text" maxlength="200" id="tbAgentName" tabindex="2" class="input">
+
+    <label class="label">Agent Address</label>
+    <input name="tbAgentAddress" type="text" maxlength="50" id="tbAgentAddress" tabindex="3" class="input">
+
+    <label class="label">City</label>
+    <input name="tbAgentCity" type="text" maxlength="20" id="tbAgentCity" tabindex="4" class="input">
+
+    <label class="label">Country</label>
+    <select name="ddlAgentCountry" onchange="javascript:setTimeout('__doPostBack(\'ddlAgentCountry\',\'\')', 0)"
+        id="ddlAgentCountry" tabindex="5">
+        <option selected="selected" value="_X_">Select a Country</option>
+        <option value="CA">CANADA</option>
+        <option value="IN">INDIA</option>
+        <option value="GB">UNITED KINGDOM</option>
+        <option value="US">UNITED STATES</option>
+    </select>
+
+    <label class="label">Province/State</label>
+    <select name="ddlAgentProvState" id="ddlAgentProvState" tabindex="6">
+        <option selected="selected" value="_X_">Select a Province/State</option>
+    </select>
+
+    <label class="label">Postal/Zip</label>
+    <input name="tbAgentPostalZip" type="text" maxlength="10" id="tbAgentPostalZip" tabindex="7" class="input"
+        style="text-transform: uppercase;">
+
+    <label class="label">Agent Telephone</label>
+    <input name="tbAgentTelAreaCode" maxlength="3" id="tbAgentTelAreaCode" tabindex="8" class="input" type="text"
+        placeholder="Telephone Area Code">
+
+    <input name="tbAgentTelNumber" maxlength="12" id="tbAgentTelNumber" tabindex="9" class="input" type="text"
+        placeholder="Telephone Number">
+
+    <input name="tbAgentTelExtension" maxlength="9" id="tbAgentTelExtension" tabindex="10" class="input" type="text"
+        placeholder="Telephone Extension">
+
+    <label class="label">Agent Fax</label>
+    <input name="tbAgentFaxAreaCode" maxlength="3" id="tbAgentFaxAreaCode" tabindex="11" class="input" type="text"
+        placeholder="Fax Area Code">
+
+    <input name="tbAgentFaxNumber" maxlength="9" id="tbAgentFaxNumber" tabindex="12" class="input" type="text"
+        placeholder="Fax Number">
+
+    <label class="label">Agent Email Address</label>
+    <input name="tbAgentEmail" maxlength="50" id="tbAgentEmail" tabindex="13" class="input" type="email">
+
+    <input type="button" value="Next" id="contact_in_canada" onclick="onclick_loadform(event)">
+</form>

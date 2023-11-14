@@ -1,0 +1,49 @@
+<h3 class="title">Apply for International Admissions</h3>
+<div class="notify">
+    Citizenship and Immigration Status
+</div>
+
+<article class="message">
+    <div class="message-body">
+        Select <strong>Study Permit (study visa)</strong> if one of the following applies:
+        <ol>
+            <li>You plan to study in Canada</li>
+            <li>You are in Canada on a work or visitor visa</li>
+            <li>You reside outside of Canada and are not a Canadian Citizen/Permanent Resident</li>
+        </ol>
+        <br>Select <strong>Other</strong> if one of the following applies:
+        <ol>
+            <li>Plan to study online with no intension of coming to Canada</li>
+            <li>Refugee Claimant (have NOT had your hearing with a positive decision)</li>
+            <li>Diplomatic status</li>
+            <li>Unsure of status</li>
+        </ol>
+    </div>
+</article>
+
+<form action="">
+    <label class="label">* Status in Canada</label>
+
+    <select name="ddlSiC" id="ddlSiC" tabindex="1" required="">
+        <option selected="selected" value="4">Study Permit (student visa)</option>
+        <option value="9">Other</option>
+
+    </select>
+
+    <p class="help">If your country is not on the drop down list, select “Other (Unknown)" from the dropdown list.
+    </p>
+
+    <label class="label">* Citizenship</label>
+
+    <select name="ddlCitz" id="ddlCitz" tabindex="2" required="">
+        <option selected="selected" value="_X_">Select a Country</option>
+        <option value="CA">CANADA</option>
+        <option value="IN">INDIA</option>
+        <option value="GB">UNITED KINGDOM</option>
+        <option value="US">UNITED STATES</option>
+    </select>
+
+    <button value="Next" id="agent_information" onclick="onclick_loadform(event)">
+        Next
+    </button>
+</form>

@@ -1,0 +1,58 @@
+<h3 class="title">Apply for International Admissions</h3>
+<div class="notify">
+    Mailing Address
+</div>
+
+<!-- start controls -->
+<form action="">
+    <label class="label">* Street 1</label>
+    <input name="tbStreet1" type="text" maxlength="75" id="tbStreet1" tabindex="1" class="input" minlength="2"
+        required="">
+
+    <label class="label">Street 2</label>
+    <input name="tbStreet2" type="text" maxlength="75" id="tbStreet2" tabindex="2" class="input">
+
+    <label class="label">Street 3</label>
+    <input name="tbStreet3" type="text" maxlength="75" id="tbStreet3" tabindex="3" class="input">
+
+    <label class="label">* City</label>
+    <input name="tbCity" type="text" maxlength="50" id="tbCity" tabindex="5" class="input" required="">
+
+    <label class="label">* Country</label>
+    <select name="ddlCountry" onchange="javascript:setTimeout('__doPostBack(\'ddlCountry\',\'\')', 0)" id="ddlCountry"
+        tabindex="6">
+        <option selected="selected" value="_X_">Select a Country</option>
+        <option value="CA">CANADA</option>
+        <option value="IN">INDIA</option>
+        <option value="GB">UNITED KINGDOM</option>
+        <option value="US">UNITED STATES</option>
+    </select>
+
+    <label class="label">* Province/State</label>
+    <select name="ddlProvState" id="ddlProvState" tabindex="7">
+        <option selected="selected" value="00">Unknown</option>
+    </select>
+
+    <label class="label">* Postal/Zip</label>
+    <input name="tbPostalZip" type="text" maxlength="30" id="tbPostalZip" tabindex="8" class="input" required=""
+        style="text-transform: uppercase;">
+
+    <label class="label">* Telephone</label>
+    <input name="tbTelCountry" maxlength="4" id="tbTelCountry" tabindex="9" class="input" type="text"
+        placeholder="Telephone Country Code">
+    <input name="tbTelAreaCode" maxlength="6" id="tbTelAreaCode" tabindex="10" class="input" type="text"
+        placeholder="Telephone Area Code" required="">
+    <input name="tbTelNumber" maxlength="12" id="tbTelNumber" tabindex="11" minlength="5" class="input" type="text"
+        placeholder="Telephone Number" required="">
+    <input name="tbTelExtension" maxlength="10" id="tbTelExtension" tabindex="12" class="input" type="text"
+        placeholder="Telephone Extension">
+
+    <label class="label">Fax</label>
+    <input name="tbFaxAreaCode" maxlength="3" id="tbFaxAreaCode" tabindex="13" class="input" type="text"
+        placeholder="Fax Area Code">
+
+    <input name="tbFaxNumber" maxlength="9" id="tbFaxNumber" tabindex="14" class="input" type="text"
+        placeholder="Fax Number">
+
+    <button id="available_programs" onclick="onclick_loadform(event)">Next</button>
+</form>

@@ -1,0 +1,63 @@
+<h3 class="title">Apply for International Admissions</h3>
+<div class="notify">
+    Contact in Canada (if applicable)
+</div>
+
+<form action="">
+    <label class="label">Contact Name</label>
+    <input name="tbContactName" type="text" maxlength="200" id="tbContactName" tabindex="1" class="input">
+
+    <label class="label">Contact Address</label>
+    <input name="tbContactAddress" type="text" maxlength="50" id="tbContactAddress" tabindex="2" class="input">
+
+    <label class="label">City</label>
+    <input name="tbContactCity" type="text" maxlength="20" id="tbContactCity" tabindex="3" class="input">
+
+    <label class="label">Country</label>
+    <select name="ddlContactCountry" onchange="javascript:setTimeout('__doPostBack(\'ddlContactCountry\',\'\')', 0)"
+        id="ddlContactCountry" tabindex="4">
+        <option selected="selected" value="_X_">Select a Country</option>
+        <option value="CA">CANADA</option>
+        <option value="IN">INDIA</option>
+        <option value="GB">UNITED KINGDOM</option>
+        <option value="US">UNITED STATES</option>
+        </select>
+
+    <label class="label">Province/State</label>
+    <select name="ddlContactProvState" id="ddlContactProvState" tabindex="5">
+        <option value="_X_">Select a Province/State</option>
+    </select>
+
+    <label class="label">Postal/Zip</label>
+    <input name="tbContactPostalZip" type="text" maxlength="10" id="tbContactPostalZip" tabindex="6" class="input"
+        style="text-transform: uppercase;">
+
+    <label class="label">Contact Telephone</label>
+    <input name="tbContactTelAreaCode" maxlength="3" id="tbContactTelAreaCode" tabindex="7" class="input" type="text"
+        placeholder="Telephone Area Code">
+
+    <input name="tbContactTelNumber" maxlength="9" id="tbContactTelNumber" tabindex="8" class="input" type="text"
+        placeholder="Telephone Number">
+
+    <input name="tbContactTelExtension" maxlength="9" id="tbContactTelExtension" tabindex="9" class="input" type="text"
+        placeholder="Telephone Extension">
+
+    <label class="label">Contact Fax</label>
+    <input name="tbContactFaxAreaCode" maxlength="3" id="tbContactFaxAreaCode" tabindex="10" class="input" type="text"
+        placeholder="Fax Area Code">
+
+    <input name="tbContactFaxNumber" maxlength="9" id="tbContactFaxNumber" tabindex="11" class="input" type="text"
+        placeholder="Fax Number">
+
+    <label class="label">Contact Email Address</label>
+    <input name="tbContactEmail" maxlength="50" id="tbContactEmail" tabindex="12" class="input" type="email"><br>
+
+    <label class="label">* I authorize my information to be released to my Contact in Canada</label>
+
+    <input id="rboCicYes" type="radio" name="rboCic" value="rboCicYes"><label for="rboCicYes">Yes</label>
+    <input id="rboCicNo" type="radio" name="rboCic" value="rboCicNo" checked="checked"><label for="rboCicNo">No</label>
+    <br>
+    <br>
+    <button name="btnApply" onclick="luckyone(event);">Next</button>
+
+</form>
