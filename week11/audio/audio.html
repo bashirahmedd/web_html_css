@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Anthem</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML5 Audio</h1>
+    <!--     
+    <h2>no controls</h2>
+    <audio >
+        <source src="media/anthems-canada_O-Canada-eng.oga" type="audio/ogg">
+        <source src="media/anthems-canada_O-Canada-eng.mp3" type="audio/mpeg">
+        browser does not support the audio element.
+    </audio> 
+    -->
+    <h2>controls</h2>
+    <audio controls>
+        <source src="media/anthems-canada_O-Canada-eng.oga" type="audio/ogg">
+        <source src="media/anthems-canada_O-Canada-eng.mp3" type="audio/mpeg">
+        browser does not support the audio element.
+    </audio>
+
+    <h2>controls autoplay</h2>
+    <audio controls autoplay muted>
+        <source src="media/anthems-canada_O-Canada-eng.oga" type="audio/ogg">
+        <source src="media/anthems-canada_O-Canada-eng.mp3" type="audio/mpeg">
+        browser does not support the audio element.
+    </audio>
+
+    <h2>contols muted</h2>
+    <audio controls muted>
+        <source src="media/anthems-canada_O-Canada-eng.oga" type="audio/ogg">
+        <source src="media/anthems-canada_O-Canada-eng.mp3" type="audio/mpeg">
+        browser does not support the audio element.
+    </audio>
+</body>
+
+</html>

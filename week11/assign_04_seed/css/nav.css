@@ -1,0 +1,49 @@
+nav h1 {
+    margin-left: .5rem;
+    text-wrap: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2.5rem;
+    margin-left:.5rem;
+    margin-right:.5rem;
+}
+
+nav ul li>a {
+    color: white;
+    margin:auto;
+    text-decoration: none;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+nav a#li-applynow{
+    padding:.7rem;
+    background-color: rgba(0, 0, 255, 0.719);
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+nav a#li-applynow:hover{
+    padding:.7rem;
+    background-color: blue;
+    border-radius: 4px;
+    font-weight: bold;
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.2)),
+        url('../images/Hero-Classroom.jpg');
+    height: 600px;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    padding-top: 1em;
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.content a {
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    color: #fff;
+    background-color: #2f70d8;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.content a:hover {
+    background-color: #08347a;
+}

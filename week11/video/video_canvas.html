@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        div#video-div {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div#label-div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        div#label-div > h1 {
+            height: 150px;
+        }
+        section{
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;            
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="label-div">
+            <div style="text-align: end;">                
+                <input type="range" min="1" max="60" value="1" style="width: 150px;display:block;" onchange="onchange_handle(event)">
+                <input id="frame-count" name="frame-count" type="text" value="1" style="width: 150px;display:block;"  readonly >
+            </div>
+            <h1>Video Element</h1>
+            <h1>Canvas Element</h1>
+        </div>
+        <div id="video-div">
+ 
+            <video id="my-video" loop controls="true" width="720" height="300">
+                <source src="media/sample_960x400_ocean1.webm" type="video/webm" />
+                <source src="media/sample_960x400_ocean.mp4" type="video/mp4" />
+                <source src="media/sample_960x400_ocean1.ogv" type="video/ogg" />
+                <source src="media/sample_960x400_ocean1.3gp" type="application/octet-stream" />
+                Browser does not support the video tag.
+            </video>
+            <canvas id="my-canvas" width="720" height="300"></canvas>
+        </div>
+    </section>
+
+    <script>
+        let frameCount = 1;
+        function onchange_handle(event){
+            frameCount=parseInt(event.target.value);
+            document.getElementById("frame-count").value=frameCount;
+        }
+        const processor = {
+
+            timerCallback() {
+                if (this.video.paused || this.video.ended) {
+                    return;
+                }
+                this.computeFrame();
+                setTimeout(() => {
+                    this.timerCallback();
+                }, Math.floor(1000/frameCount));
+                // roughly 60 frames per second 1000/16
+                // roughly 30 frames per second 1000/32
+                // roughly 20 frames per second 1000/50
+                // roughly 10 frames per second 1000/100
+                // roughly 5 frames per second 1000/200
+            },
+
+            doLoad() {
+                this.video = document.getElementById("my-video");
+                this.c1 = document.getElementById("my-canvas");
+                this.ctx1 = this.c1.getContext("2d");
+                this.video.addEventListener(
+                    "play",
+                    () => {
+                        this.width = this.video.width;
+                        this.height = this.video.height;
+                        this.timerCallback();
+                    },
+                    false,
+                );
+            },
+
+            computeFrame() {
+                this.ctx1.drawImage(this.video, 0, 0, this.width, this.height);
+                /*const frame = this.ctx1.getImageData(0, 0, this.width, this.height);
+                const l = frame.data.length / 4;
+
+               for (let i = 0; i < l; i++) {
+                    const grey =
+                        (frame.data[i * 4 + 0] +
+                            frame.data[i * 4 + 1] +
+                            frame.data[i * 4 + 2]) /
+                        3;
+
+                    frame.data[i * 4 + 0] = grey;
+                    frame.data[i * 4 + 1] = grey;
+                    frame.data[i * 4 + 2] = grey;
+                } 
+                this.ctx1.putImageData(frame, 0, 0);*/
+                return;
+            },
+        };
+        processor.doLoad();
+    </script>
+</body>
+
+</html>

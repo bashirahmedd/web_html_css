@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>autoplay controls</h4>
+        <video id="my-video" autoplay controls width="960" height="400" >
+            <source src="media/sample_960x400_ocean1.webm" type="video/webm" />
+            <source src="media/sample_960x400_ocean1.ogv" type="video/ogg" />
+            <source src="media/sample_960x400_ocean.mp4" type="video/mp4" />
+            <source src="media/sample_960x400_ocean1.3gp" type="application/octet-stream" />
+            Browser does not support the video tag.
+        </video>
+        <h4>muted controls</h4>
+        <video id="my-video" muted controls width="960" height="400" >
+            <source src="media/sample_960x400_ocean1.webm" type="video/webm" />
+            <source src="media/sample_960x400_ocean1.ogv" type="video/ogg" />
+            <source src="media/sample_960x400_ocean.mp4" type="video/mp4" />
+            <source src="media/sample_960x400_ocean1.3gp" type="application/octet-stream" />
+            Browser does not support the video tag.
+        </video>
+        <h4>loop controls</h4>
+        <video id="my-video" muted controls loop width="960" height="400" >
+            <source src="media/sample_960x400_ocean1.webm" type="video/webm" />
+            <source src="media/sample_960x400_ocean1.ogv" type="video/ogg" />
+            <source src="media/sample_960x400_ocean.mp4" type="video/mp4" />
+            <source src="media/sample_960x400_ocean1.3gp" type="application/octet-stream" />
+            Browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
+</html>

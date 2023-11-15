@@ -1,0 +1,22 @@
+<h3 class="title">Apply for International Admissions</h3>
+
+<div class="notify">
+    Select your applicant type and application year, then click on "Apply"
+</div>
+
+<form action="/action_page.php">
+    <label class="label">Applicant Type</label>
+    <select name="ddlApplicantType" id="ddlApplicantType" required="">
+        <option value="INTERNATIONAL">International Applicants</option>
+    </select>
+
+    <label class="label">Applicant Year</label>
+    <select name="ddlApplicantYear" id="ddlApplicantYear" required="">
+        <option value="INTWEBAPP11">Fall 2024, Winter 2025 or Summer 2025</option>
+        <option value="INTWEBAPP10">Fall 2023, Winter 2024 or Summer 2024</option>
+    </select>
+
+    <button name="personal_information"  id="personal_information" onclick="onclick_loadform(event)">
+        Next
+    </button>
+</form>

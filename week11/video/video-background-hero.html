@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .video-wrapper {
+            margin-top: 2rem;
+            border: 2px solid #000;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video {
+            object-fit: cover;
+            position: absolute;     
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .header {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            padding: .5rem 2rem;
+            font-size: large;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            background: #000;
+            color: #fff;
+            border: none;
+        }
+
+        button:hover{
+            background: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section style="text-align: center;">
+        <h1>Navigation Bar</h1>
+    </section>
+    <section class="video-wrapper">
+        <video playsinline autoplay muted loop id="myVideo">
+            <source src="media/Jellyfish_1080_10s_2MB.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="header">
+            <h1>Be careful when you are using videos as background, it may slow down page rendering.</h1>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+    </section>
+    <section>
+        <p style="font-weight: bold; text-align: center;">
+            Be careful when you are using videos as background, it may slow down page rendering. specially where
+            internet speed is poor.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur praesentium atque ducimus illum
+            iste esse, rerum, sapiente molestiae eum doloribus inventore tempore molestias id modi ab perspiciatis dicta
+            qui.
+            Totam non amet incidunt harum dolores officiis, temporibus veritatis accusamus, magnam ipsa, voluptates
+            laboriosam. Magni quis aliquid qui eligendi porro vitae omnis quam, quaerat quasi repudiandae laborum
+            exercitationem eaque sed.
+            Deleniti quo impedit, tempora ut eveniet voluptas voluptatum eius dolorum alias dolorem laborum. Labore ut
+            praesentium vel fugit veritatis reprehenderit quae eaque perferendis incidunt illum quam impedit, dolores
+            hic eos.
+            Asperiores nisi velit itaque fugiat eligendi cumque, obcaecati et nostrum dolorem aut ut odit minus
+            molestias similique nesciunt culpa minima quisquam quod sunt. Libero tempora molestias labore voluptate id
+            nam?
+            Iusto numquam vel eius! Non cum nihil inventore perspiciatis dignissimos dicta, maiores dolorem praesentium
+            culpa doloribus aliquam voluptate, voluptates amet ab repudiandae dolores officia! Eum ullam cum distinctio
+            mollitia libero.
+            Beatae neque quia accusamus iure nam nihil nobis consequatur aperiam culpa eos fugiat inventore doloremque
+            magnam voluptatem quod eveniet eius, autem rem itaque eligendi? Ullam neque quidem error provident
+            voluptate?
+            Perspiciatis atque doloremque qui veniam, facere quae nisi totam ipsa officiis eum? Voluptates quidem earum
+            non recusandae quasi libero porro nihil eius excepturi, debitis ipsa. Officiis reiciendis rem debitis
+            possimus?
+            Cum perspiciatis maxime, illo asperiores libero totam, ex impedit, officiis et natus non? Officiis, in eos
+            qui expedita quo architecto. Ipsum perspiciatis, cumque sed debitis aut animi. Recusandae, architecto
+            nostrum.
+            Vero officiis voluptatem unde. Nemo eos iusto illum optio voluptatem tempora atque nesciunt porro ab ipsam
+            distinctio maxime praesentium deserunt, cum autem similique eius, possimus, excepturi officiis vero
+            voluptatibus qui?
+            Reprehenderit, repudiandae deserunt incidunt facilis fuga itaque libero voluptates distinctio ad officiis
+            ducimus quasi dignissimos ut quia quo voluptatem quam quae voluptas similique ex id, eum minus?
+            Exercitationem, in facere?
+        </p>
+    </section>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+
+</html>

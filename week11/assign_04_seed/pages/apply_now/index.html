@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Wisdom College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="css/apply_now.css">
+</head>
+
+<body>
+    <main id="container">
+        <header id="home-nav"></header>
+        <section class="main-section">
+
+            <!-- menu column -->
+            <div class="side-nav-container">
+                <h3>New Applicants</h3>
+                <aside >
+                    <ul >
+                        <li><a id="personal_information" onclick="onclick_loadform(event)">* Personal Information</a></li>
+                        <li><a id="mailing_address" onclick="onclick_loadform(event)">* Mailing Address</a></li>
+                        <li><a id="available_programs" onclick="onclick_loadform(event)">* Available Programs</a></li>
+                        <li><a id="citizenship_status" onclick="onclick_loadform(event)">* Citizenship and Immigration Status</a></li>
+                        <li><a id="agent_information" onclick="onclick_loadform(event)">Agent Information</a></li>
+                        <li><a id="contact_in_canada" onclick="onclick_loadform(event)">Contact in Canada</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- form column -->
+            <div id="form-container" class="form-container">
+                form loading area
+            </div>
+
+        </section>
+    </main>
+    <script src="../../js/lib/jquery-3.7.1.min.js"></script>
+    <script src="../../js/child-l1.js"></script>
+    <script src="js/form_loader.js"></script>
+
+</body>
+
+</html>

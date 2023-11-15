@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+
+<body>
+    <p>Window width: <span id="width"></span></p>
+    <p>Window height: <span id="height"></span></p>
+    <p>(min-width: 850px)</p>
+    <p>(min-width: 650px)</p>
+    <picture>
+        <source media="(min-width: 850px)" srcset="media/oranges-1995056_1280.jpg">
+        <source media="(min-width: 650px)" srcset="media/oranges-1995056_640.jpg">
+        <img src="media/mangoes-1320111_640.jpg">
+    </picture>
+</body>
+<script>
+    const heightOutput = document.querySelector("#height");
+    const widthOutput = document.querySelector("#width");
+
+    function reportWindowSize() {
+        heightOutput.textContent = window.innerHeight;
+        widthOutput.textContent = window.innerWidth;
+    }
+
+    window.onresize = reportWindowSize;
+</script>
+</html>
