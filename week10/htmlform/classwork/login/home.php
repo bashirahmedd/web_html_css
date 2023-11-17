@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    Welcome to TBC
+    <h1 style="text-align: center;">Toronto Business College</h1>
+    <h1 style="text-align: center;">
+    <?php
+        echo 'Welcome ' . htmlspecialchars($_POST["uname1"]) . '!';
+    ?>
+    </h1>
 </body>
 </html>
