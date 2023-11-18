@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebGL Work</title>
+        <link href='drawArrays.css' 	type='text/css' rel='stylesheet'/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type='text/javascript' src='../js/libs/jquery-1.8.2.js'></script>
+        <script type='text/javascript' src='../js/utils.js'></script>
+        <script type="text/javascript" src="initialize.js"></script>
+        <script type='text/javascript' src="drawTriangle.js"></script>
+        <script type='text/javascript' src="drawLine.js"></script>
+
+        <!-- Fragment Shader //-->
+        <script id="shader-fs" type="x-shader/x-fragment">
+            precision mediump float;
+
+            varying vec4 vColor;
+
+            void main(void) {
+            gl_FragColor = vColor;
+            }
+        </script>
+
+        <!-- Vertex Shader //-->
+        <script id="shader-vs" type="x-shader/x-vertex">
+            attribute vec3 aVertexPosition;
+            attribute vec4 aVertexColor;
+
+            varying vec4 vColor;
+
+            void main(void) {
+            gl_Position =  vec4(aVertexPosition, 1.0);
+            vColor = aVertexColor;
+            }
+        </script>
+
+        <script type="text/javascript">
+            var gl = null;
+            var prg = null; 
+            var glBuilder = null;
+            var drawTng = null;
+            var drawLn = null;
+
+            $(document).ready(function() {                
+                glBuilder = new GLBuilder();
+                drawTng = new DrawTriangle();
+                drawLn = new DrawLine();
+
+                glBuilder.initWebGL();
+                gl.viewportWidth = $('#cnv_layer1').attr('width');
+                gl.viewportHeight = $('#cnv_layer1').attr('height');
+                
+                $("#btnDrawGeometery").click(function(event) {
+                    drawTng.drawTriangles();
+                });
+                $("#btnLineDrawGeometery").click(function(event) {
+                    drawLn.drawLines();
+                });
+            });
+        </script>      
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-text">WebGL Work</div>
+            <canvas id="cnv_layer1"  height="600" width="800"></canvas>
+            <div style="padding: 20px;">                
+                <fieldset style="width:45%; display: inline;">
+                    <legend>GL drawArrays Options:</legend>  
+                    <select id="selDrawMode">
+                        <option>TRIANGLE_FAN</option>
+                        <option>TRIANGLES</option>   
+                        <option>TRIANGLE_STRIP</option>                           
+                    </select>
+                    <button id="btnDrawGeometery"> Draw Triangles</button>
+                </fieldset>
+                <fieldset style="width:45%;display: inline;">
+                    <legend>GL drawArrays Options:</legend>  
+                    <select id="selLineMode">
+                        <option>LINE_LOOP</option>
+                        <option>LINES</option>   
+                        <option>LINE_STRIP</option>                           
+                    </select>
+                    <select id="selLineWidth">
+                        <option>1</option>
+                        <option>4</option>   
+                        <option>8</option>                           
+                    </select>
+                    <button id="btnLineDrawGeometery"> Draw Lines</button>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

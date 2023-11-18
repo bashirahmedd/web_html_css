@@ -1,0 +1,20 @@
+hmtl, body{
+    margin: 0;
+    padding: 0;                    
+}
+.header{
+    margin: 0 auto;
+    width:800px;
+    background-color: #ffff00;                
+}
+.header-text{
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 auto;
+    width:150px;
+}
+canvas{
+    border: 1px;
+    border-color: #000000;
+    border-style: dashed;
+}
