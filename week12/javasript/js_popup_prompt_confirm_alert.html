@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 0;
+            width: 30%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        span#prompt{
+            font-size: large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript Alert</h2>
+
+    <button onclick="alert_func()">Press to get alert</button>
+    <button onclick="alert_multiline_func()">Press to get multiline alert</button>
+
+    <h2>JavaScript Confirm</h2>
+    <button onclick="confirm_func()">Press click to confirm</button>
+
+    <h2>JavaScript Prompt</h2>
+    <button onclick="prompt_func()">Press enter you option to proceed</button>
+    <span id="prompt" name="prompt"></span>
+
+    <script>
+        function alert_func() {
+            alert("I am a single line alert message box");
+        }
+        
+        function alert_multiline_func() {
+            alert(" Toronto Business College \n is an ideal place to acquire \n skills ");
+        }
+
+        function confirm_func() {
+            if (window.confirm("Are you feeling proud to be in Canada?")) {
+                document.body.style.backgroundColor = "green";
+            } else {
+                document.body.style.backgroundColor = "red";
+            }
+            setTimeout(() => {
+                document.body.style.backgroundColor = "white";
+            }, 5 * 1000)
+        }
+
+        function prompt_func() {
+            const val = window.prompt("What is your favourite place", "Museum");
+            let msg;
+            if (val !== null && val.length > 0) {
+                msg = "Intereting to know";
+            } else {
+                msg = "Weird!";
+            }
+            document.getElementById('prompt').textContent=msg;
+        }
+    </script>
+
+</body>
+
+</html>

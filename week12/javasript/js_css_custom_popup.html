@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="improvement" content="html css modal popup when show freeze scroll">
+
     <title>HMTL CSS JavaScript</title>
     <style>
         body {
@@ -11,6 +13,7 @@
             margin: 0;
             padding: 0;
         }
+
         .button-class {
             font-family: "helvetica neue", helvetica, sans-serif;
             letter-spacing: 1px;
@@ -23,11 +26,23 @@
             padding: 3px 10px;
             cursor: pointer;
         }
+
         .button-class:hover {
             background-color: rgba(52, 78, 148, 0.527);
         }
-        .popup {
+
+        .wrap-popup {
             display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.447);
+            z-index: 1000;
+        }
+
+        .popup {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -38,7 +53,6 @@
             border: 1px solid #cccccc;
             box-shadow: 0px 0px 10px #cccccc;
             border-radius: 10px;
-            z-index: 1000;
         }
 
         .popup .header {
@@ -46,7 +60,7 @@
             letter-spacing: 1px;
             padding: .5rem;
             background-color: rgba(0, 0, 0, 0.685);
-            color:white;
+            color: white;
             font-weight: bold;
             font-size: medium;
         }
@@ -62,20 +76,21 @@
             padding: .5rem;
             text-align: center;
         }
-        .popup .footer button{
+
+        .popup .footer button {
             padding: .25rem 2rem;
         }
     </style>
     <script>
         function click_handler(event) {
-            let popup = document.getElementsByClassName("popup");
+            let popup = document.getElementsByClassName("wrap-popup");
             if (popup.length > 0) {
                 popup[0].style.display = "block";
             }
         }
 
         function ok_click_handler(event) {
-            let popup = document.getElementsByClassName("popup");
+            let popup = document.getElementsByClassName("wrap-popup");
             if (popup.length > 0) {
                 popup[0].style.display = "none";
             }
@@ -88,17 +103,27 @@
     <button type="button" class="button-class">HTML CSS Button</button><br /><br />
     <button type="button" class="button-class" onclick="click_handler(event)">HMTL CSS JavaScript Button</button>
 
-    <div class="popup">
-        <div class="header">
-            Info Message
-        </div>
-        <div class="main">
-            Javascript brings interactivity in the web pages
-        </div>
-        <div class="footer">
-            <button type="button" onclick="ok_click_handler(event)" class="ok">OK</button>
+    <div class="wrap-popup">
+        <div class="popup">
+            <div class="header">
+                Info Message
+            </div>
+            <div class="main">
+                Javascript brings interactivity in the web pages
+            </div>
+            <div class="footer">
+                <button type="button" onclick="ok_click_handler(event)" class="ok">OK</button>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
+
+
+
+
+
+
+
