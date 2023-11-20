@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        window innerHeight innerWidth
+    </title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript Window</h2>
+
+    <p>Window innerWidth: <span id="width"></span></p>
+    <p>Window innerHeight: <span id="height"></span></p>
+    <p>Window outerWidth: <span id="outerWidth"></span></p>
+    <p>Window outerHeight: <span id="outerHeight"></span></p>
+    <p>Screen width: <span id="scrwidth"></span></p>
+    <p>Screen height: <span id="scrheight"></span></p>
+
+    <script>
+        const heightOutput = document.querySelector("#height");
+        const widthOutput = document.querySelector("#width");
+        const scrwidth = document.querySelector("#scrwidth");
+        const scrheight = document.querySelector("#scrheight");
+        const outerWidth = document.querySelector("#outerWidth");
+        const outerHeight = document.querySelector("#outerHeight");
+
+        function reportWindowSize() {
+            heightOutput.textContent = window.innerHeight;
+            widthOutput.textContent = window.innerWidth;
+            
+            scrwidth.textContent=screen.width;
+            scrheight.textContent= screen.height;
+
+            outerWidth.textContent=window.outerWidth;
+            outerHeight.textContent=window.outerHeight
+        }
+
+        window.onresize = reportWindowSize;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <style>
+        .demo1 {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+
+        .demo2 {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            font-size: 3em;
+
+            color: blue;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="border: 2px solid black; margin-bottom:1rem;padding: 1rem;">
+        <h1>background color</h1>
+        <div id="demo1" class="demo1">Toronto Business College</div>
+        <button id="add1">Change CSS style</button>
+    </div>
+
+    <div style="border:2px solid black;padding:1rem;">
+        <h1>text color</h1>
+        <div id="demo2" class="demo2" style="color: red;">Toronto Business College</div>
+        <button id="add2" class="add">Change CSS style</button>
+    </div>
+
+    <script>
+        const button1 = document.getElementById('add1');
+        button1.addEventListener('click', () => {
+            const element = document.getElementById('demo1');
+            element.style.backgroundColor = 'red';
+        });
+
+        const button = document.getElementById('add2');
+        button.addEventListener('click', () => {
+            const element = document.getElementById('demo2');
+            element.style.color = 'green';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 25% auto;
+            text-align: center;
+            font-size: large;
+        }
+        body{
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>A paragraph with a <button>button</button>.</p>
+    <script>
+        let para = document.querySelector("p");
+        let button = document.querySelector("button");
+        para.addEventListener("mousedown", () => {
+            alert("Handler for paragraph.");
+        });
+        button.addEventListener("mousedown", event => {
+            alert("Handler for button.");
+            if (event.button == 2) event.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>

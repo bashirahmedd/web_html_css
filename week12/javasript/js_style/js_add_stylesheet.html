@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+
+        .demo {
+            color: blue;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">Hello</div>
+    <button class="add">Append Stylesheet</button>
+</body>
+<script>
+    const button = document.querySelector("button");
+
+    // The content of the stylesheet
+    const styleSheetContent = `
+        .demo{
+            background:red;
+        }`;
+
+    button.addEventListener("click", () => {
+        appendStyleSheet("demo", styleSheetContent);
+    });
+
+    // Appends CSS content to the head of the site
+    function appendStyleSheet(id, content) {
+        if (!document.querySelector("#" + id)) {
+            var head = document.head || document.getElementsByTagName("head")[0];
+            console.log(head);
+            head.appendChild(createStyleElement(id, content));
+        }
+    }
+
+    function createStyleElement(id, content) {
+        var style = document.createElement("style");
+        style.type = "text/css";
+        style.id = id;
+
+        if (style.styleSheet) {
+            style.styleSheet.cssText = content;
+        } else {
+            style.appendChild(document.createTextNode(content));
+        }
+        return style;
+    }
+
+</script>
+
+</html>

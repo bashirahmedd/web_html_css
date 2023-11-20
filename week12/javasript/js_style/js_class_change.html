@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .new-class {
+            background: red;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="demo">Hello</div>
+    <button class="add">Add Class</button>
+    <button class="remove">Remove Class</button>
+    <button class="toggle">Toggle Class</button>
+
+</body>
+<script>
+    const buttonAdd = document.querySelector('.add');
+    buttonAdd.addEventListener('click', addClass);
+
+    const buttonRemove = document.querySelector('.remove');
+    buttonRemove.addEventListener('click', removeClass);
+
+    const buttonToggle = document.querySelector('.toggle');
+    buttonToggle.addEventListener('click', toggleClass);
+
+    function addClass() {
+        const element = document.querySelector('.demo');
+        element.classList.add('new-class');
+    }
+
+    function removeClass() {
+        const element = document.querySelector('.demo');
+        element.classList.remove('new-class');
+    }
+
+    function toggleClass() {
+        const element = document.querySelector('.demo');
+        element.classList.toggle('new-class');
+    }
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style id="demo">
+        .element {
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+        }
+    </style>
+
+    <div class="element">
+        Toronto Business College
+    </div>
+
+    <button>Modify Stylesheet</button>
+
+    <script>
+        var button = document.querySelector('button');
+        button.addEventListener('click', modifyStyleSheet);
+
+        function modifyStyleSheet() {
+            // Getting the stylesheet
+            const stylesheet = document.styleSheets[0];
+            console.log(stylesheet);
+            let elementRules;
+
+            // looping through all its rules and getting your rule
+            for (let i = 0; i < stylesheet.cssRules.length; i++) {
+                if (stylesheet.cssRules[i].selectorText === '.element') {
+                    elementRules = stylesheet.cssRules[i];
+                }
+            }
+
+            // modifying the rule in the stylesheet
+            elementRules.style.setProperty('background', 'blue');
+        }
+    </script>
+</body>
+
+</html>
