@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        text-align: center;
+    }
+
+    body>div {
+        height: 40vh;
+        display: flex;
+        gap: .25rem;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+
+    }
+
+    body>div>div>div {
+        font-size: xx-large;
+        background-color: hsl(36, 83%, 42%);
+    }
+</style>
+
+<body>
+    <h1>HTML DOM Events</h1>
+
+    <div>
+        <div>
+            <p>onmousemove</p>
+            <div id="demo1" onmousemove="myMoveFunction()">
+                ..
+            </div>
+        </div>
+        <div>
+            <p>onmouseenter</p>
+            <div id="demo2" onmouseenter="myEnterFunction()">
+                ..
+            </div>
+        </div>
+        <div>
+            <p>onmouseover</p>
+            <div id="demo3" onmouseover="myOverFunction()">
+                ..
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let x = 0;
+        let y = 0;
+        let z = 0;
+
+        function myMoveFunction() {
+            document.getElementById("demo1").innerHTML = z += 1;
+        }
+
+        function myEnterFunction() {
+            document.getElementById("demo2").innerHTML = x += 1;
+        }
+
+        function myOverFunction() {
+            document.getElementById("demo3").innerHTML = y += 1;
+        }
+    </script>
+
+</body>
+
+</html>
