@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.hide {
+			display: none;
+		}
+
+		.blueColor {
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green;">
+		Web Designing Course
+	</h1>
+	
+	<h2>
+		How can the style/class of
+		an element be changed?
+	</h2>
+	
+	<h3>Hide and Show the Para</h3>
+	
+	<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit alias consequatur obcaecati quam eum quod, aliquid unde impedit vero dolor ad fugiat beatae minus. Molestiae expedita odio voluptatum dolores placeat.
+Repellat, cumque pariatur, iusto dignissimos quo aspernatur vitae suscipit quod modi quia expedita nam nobis in velit repudiandae explicabo aut! Voluptas alias veniam culpa consequuntur quod corrupti quaerat rerum non?
+Perspiciatis fugiat mollitia blanditiis quae consectetur magni deserunt laudantium repudiandae soluta? Nam odio, itaque error voluptatum minus possimus modi quae sed. Repudiandae maiores possimus praesentium, exercitationem earum optio nisi itaque!
+Quae id aut delectus quasi facilis iste rerum voluptates temporibus, voluptate mollitia ullam nesciunt, quidem voluptas molestiae autem laborum ab optio? Sunt, deserunt natus. Eum expedita repellendus aperiam sequi eos.
+Odio accusantium fugit nemo tempore voluptate minima! Architecto officiis eaque harum quibusdam reprehenderit cum nam totam accusantium corrupti ad. Ipsam, dolor magni sequi a illo exercitationem porro? Sunt, corporis cupiditate?
+Nobis, similique necessitatibus, omnis fugit hic veritatis tempore, repellat rem quod sed libero excepturi minus suscipit explicabo corrupti? Consequatur cumque blanditiis iusto esse modi excepturi omnis repellat neque doloribus officia!
+	</p>
+	
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	<button id="color">Change Color</button>
+
+	<script>
+		const btn_hide = document.getElementById("hide");
+		const btn_show = document.getElementById("show");
+		const btn_color = document.getElementById("color");
+
+		const para = document.querySelector("p");
+		btn_hide.addEventListener("click", function () {
+			para.classList.add("hide");
+		});
+
+		btn_show.addEventListener("click", function () {
+			para.classList.remove("hide");
+		});
+
+		btn_color.addEventListener("click", function () {
+			para.classList.toggle("blueColor");
+		});
+	</script>
+</body>
+
+</html>

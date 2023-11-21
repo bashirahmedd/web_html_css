@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+
+<body>
+    <script>
+        // console.log() method 
+        console.log('abc');
+        console.log(1);
+
+
+        // console.error() method 
+        console.error('This is a simple error');
+
+        // console.warn() method 
+        console.warn('This is a warning.');
+
+        // console.clear() method 
+        //console.clear();
+
+        // console.time() and console.timeEnd() method 
+        console.time('abc');
+        let fun = function () {
+            console.log('fun is running');
+        }
+        let fun2 = function () {
+            console.log('fun2 is running..');
+        }
+        fun(); // calling fun(); 
+        fun2(); // calling fun2(); 
+        console.timeEnd('abc');
+
+        // console.table() method 
+        console.table({ 'a': 1, 'b': 2 });
+
+        // console.count() method 
+        for (let i = 0; i < 5; i++) {
+            console.count(i);
+        }
+
+        // console.group() and console.groupEnd() method 
+        console.group('Group');
+        console.warn('warning!');
+        console.error('error here');
+        console.log('vivi vini vici');
+        console.groupEnd('Group');
+
+        // Custom Console log example 
+        const spacing = '10px';
+        const styles =
+            `padding: ${spacing}; background-color: white; 
+                color: blue; font-style:italic; 
+                border: 2px solid blue; font-size: 3em;
+                border-radius:8px`;
+        console.log('%cToronto Business College', styles);
+    </script>
+</body>
+
+</html>

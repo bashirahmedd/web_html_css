@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="home">
+        <h1>Welcome</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+            Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+        </p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+            Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+        </p>
+    </section>
+    <section id="blog">
+        <h2>Articles</h2>
+        <div class="articles" id="article-1">
+            <h3>Article Title One</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+                Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+            </p>
+            <a href="#"> Read More </a>
+        </div>
+        <div class="articles" id="article-2">
+            <h3>Article Title Two</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+                Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+            </p>
+            <a href="#"> Read More </a>
+        </div>
+        <div class="articles" id="article-3">
+            <h3>Article Title Three</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+                Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+            </p>
+            <a href="#"> Read More </a>
+        </div>
+        <div class="articles" id="article-4">
+            <h3>Article Title Four</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores voluptatum et repellat?
+                Quae iusto non eligendi hic accusamus itaque ut in delectus sint perspiciatis quos rem a, atque veniam.
+            </p>
+            <a href="#"> Read More </a>
+        </div>
+    </section>
+    <script>
+        console.group('single_element_selector');
+        const getElementById = document.getElementById('article-3');
+        console.log(getElementById);
+        const querySelector = document.querySelector('.articles');
+        console.log(querySelector);
+        const querySelector1 = document.querySelector('#article-3')
+        console.log(querySelector1);
+        console.groupEnd('single_element_selector');
+
+        console.group('multiple_element_selector');
+        const getElementsByTagName = document.getElementsByTagName('h2');
+        console.log(getElementsByTagName);
+        const getElementsByClassName = document.getElementsByClassName('articles');
+        console.log(getElementsByClassName);
+        const querySelectorAll = document.querySelectorAll('#blog p');
+        console.log(querySelectorAll);
+        const querySelectorAll1 = document.querySelectorAll('h2, .articles')
+        console.log(querySelectorAll1)
+        console.groupEnd('multiple_element_selector');
+
+
+    </script>
+</body>
+
+</html>

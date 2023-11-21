@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:Orbitron;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <p id="clockdisplay">
+        waiting ...
+    </p>
+    <script>
+        const clockdisplay = document.getElementById("clockdisplay");
+        // program to display time every 5 seconds
+        function showTime() {
+            let dateTime = new Date();
+            let time = dateTime.toLocaleTimeString();
+            clockdisplay.textContent = time;
+        }
+
+        let display = setInterval(showTime, 1000);
+    </script>
+</body>
+
+</html>

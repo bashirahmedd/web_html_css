@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Orbitron;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <p id="clockdisplay">
+        timer for 20 seconds ...
+    </p>
+    <script>
+        const clockdisplay = document.getElementById("clockdisplay");
+        // program to stop the setInterval() method after five times
+
+        let count = 0;
+        const MAX = 20;
+
+        // function creation
+        let interval = setInterval(function () {
+
+            // increasing the count by 1
+            count += 2;
+
+            // when count equals to 5, stop the function
+            if (count === 20) {
+                clearInterval(interval);
+                clockdisplay.textContent = "Done with 20 sec timer";
+            } else {
+                clockdisplay.textContent = count;
+            }   
+        }, 2000);
+    </script>
+</body>
+
+</html>

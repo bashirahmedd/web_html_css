@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* height: 100vh; */
+            flex-direction: column;
+            gap: .25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h2,
+        button {
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="search();">window.location.search query string</button>
+    <script>
+        function search() {
+            window.location.assign(window.location.href + "?fname=david");
+        }
+    </script>
+    <button type="button" onclick="hash();">window.location.hash featurepagesection</button>
+    <script>
+        function hash() {
+            window.location.assign(window.location.href + "#featurepagesection");
+            const hashp = document.getElementById("hashp");
+            hashp.textContent=window.location.hash;
+        }
+    </script>
+    <script>
+        // Prints query string like ?q=ipad
+        display("window.location.search", window.location.search,false);
+
+        // Prints fragment identifier like #featured
+        display("window.location.hash", window.location.hash,true);
+
+        // Prints complete URL
+        display("window.location.href", window.location.href,false);
+
+        // Prints protocol like http: or https:
+        display("window.location.protocol", window.location.protocol,false);
+
+        // Prints hostname with port like localhost or localhost:3000
+        display("window.location.host", window.location.host,false);
+
+        // Prints hostname like localhost or www.example.com
+        display("window.location.hostname", window.location.hostname,false);
+
+        // Prints port number like 3000
+        display("window.location.port", window.location.port,false);
+
+        // Prints pathname like /products/search.php
+        display("window.location.pathname", window.location.pathname,false);
+
+
+
+        function display(name, val, setid) {
+
+            const h2 = document.createElement('h2');
+            h2.textContent = name;
+            document.body.appendChild(h2);
+
+            const para = document.createElement('p');
+            if (setid) {
+                para.id = "hashp"
+            }
+            para.textContent = val;
+            document.body.appendChild(para);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

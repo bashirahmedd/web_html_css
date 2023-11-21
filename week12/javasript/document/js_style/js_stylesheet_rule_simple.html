@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <title>Modifying a stylesheet rule</title>
+    <style>
+        body {
+            background-color: hsl(202, 78%, 40%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        const stylesheet = document.styleSheets[0];
+        function changeBgrule() {
+            stylesheet.cssRules[0].style.backgroundColor =  '#16b686';
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="changeBgrule();">Change StyleSheet Rule</button>
+    <p>The stylesheet declaration for the body's background color is modified via
+        JavaScript.
+    </p>
+</body>
+
+</html>

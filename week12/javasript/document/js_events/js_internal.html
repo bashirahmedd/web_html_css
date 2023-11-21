@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Internal JavaScript example</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function createParagraph() {
+                const para = document.createElement('p');
+                para.textContent = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Nihil est accusamus ea ab nesciunt libero autem error, beatae vitae qui 
+                labore atque minus cupiditate possimus nobis odit, voluptates nostrum totam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quasi error
+                 amet id eius minus velit, dolore facere nihil ea quod praesentium ut vel atque 
+                 itaque, rerum provident debitis quam!`;
+                document.body.appendChild(para);
+            }
+
+            const btnPar = document.getElementById('btnPar');
+            btnPar.addEventListener('click', createParagraph);
+        });
+    </script>
+</head>
+
+<body>
+    <h1> JavaScript addEventListener</h1>
+    <h2>document.createElement</h2>
+    <button id="btnPar">Show Text</button>
+</body>
+
+</html>

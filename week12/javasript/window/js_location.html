@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > div{
+            height: 40vh;
+            display: flex;
+            gap: .25rem;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+
+        button {
+            font-size: larger;
+            font-weight: bold;
+            padding: .25rem 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Window object Apis</h1>
+    <div>
+        <button type="button" onclick="assign();">assign</button>
+        <script>
+            var url = "https://www.google.com";
+            function assign() {
+                window.location.assign(url);
+            }
+        </script>
+
+        <script>
+            function replace() {
+                window.location.replace(url);
+            }
+        </script>
+        <button type="button" onclick="replace();">replace</button>
+
+
+        <script>
+            function href() {
+                window.location.href = url;
+            }
+        </script>
+        <button type="button" onclick="href();">href</button>
+
+        <script>
+            function reload() {
+                window.location.reload(true);
+            }
+        </script>
+        <button type="button" onclick="reload();">Reload Page</button>
+    </div>
+
+</body>
+
+</html>
