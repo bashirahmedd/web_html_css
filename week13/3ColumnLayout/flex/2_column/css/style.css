@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*------start header-----*/
+.header {
+  background-color: #333;
+  color: white;
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.active {
+  border-bottom: 0.1rem solid white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0 0.25rem 0;
+  font-size: large;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/*------end header-----*/
+/*------start main -----*/
+main {
+  display: flex;
+}
+main aside {
+  width: 20%;
+  padding: 0.5rem;
+}
+main aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+main aside ul li {
+  padding: 0.5rem;
+  margin-bottom: 0.1rem;
+  background-image: linear-gradient(45deg, #333, #e2e2e2);
+  color: #ffffff;
+}
+main aside ul li:hover {
+  background-color: #111;
+}
+main section {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+/*------end main area-----*/
+/*------start footer-----*/
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 0 0.25rem;
+}
+.footer h3 {
+  text-align: center;
+  padding: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

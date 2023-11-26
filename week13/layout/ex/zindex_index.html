@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --init_pos:10px;
+            --offset:20px;
+            --inc: -1 * var(--offset) * 2;
+            --iwidth:75px;
+            --iheight:75px;
+        }
+
+        div {
+            position: absolute;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: right;
+        }
+
+        #first {
+            z-index: -3;
+            background-color: #FF5C35;
+            top: var(--init_pos);
+            left: var(--init_pos);
+            width: calc(var(--iwidth) + var(--inc) * -3 );
+            height: calc(var(--iheight) + var(--inc) * -3 );
+        }
+
+        #second {
+            z-index: -2;
+            background-color: #192733;
+            top: calc(var(--init_pos) + var(--offset));
+            left: calc(var(--init_pos) + var(--offset));
+            width: calc(var(--iwidth) + var(--inc) * -2 );
+            height: calc(var(--iheight) + var(--inc) * -2 );
+        }
+
+        #third {
+            z-index: -1;
+            background-color: #4FB06D;
+            top: calc(var(--init_pos) + var(--offset)*2);
+            left: calc(var(--init_pos) + var(--offset)*2);
+            width: calc(var(--iwidth) + var(--inc) * -1 );
+            height: calc(var(--iheight) + var(--inc) * -1 );
+        }
+
+        #fourth {
+            z-index: auto;
+            /* 0 */
+            background-color: #ED2D40;
+            top: calc(var(--init_pos) + var(--offset)*3);
+            left: calc(var(--init_pos) + var(--offset)*3);
+            width: calc(var(--iwidth) + var(--inc) * 0 );
+            height: calc(var(--iheight) + var(--inc) * 0 );
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first">1</div>
+    <div id="second">2</div>
+    <div id="third">3</div>
+    <div id="fourth">4</div>
+</body>
+
+</html>

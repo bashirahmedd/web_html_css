@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-primary: grey;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        
+        .wrapper{
+            margin: 0 auto;
+            max-width: 400px;
+        }
+        .container-wrap {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            border: 1px solid var(--color-primary);
+        }
+        .container-nowrap {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: nowrap;
+            border: 1px solid var(--color-primary);
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Wrapped flex </h1>
+                <div class="container-wrap" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five, with longer text</div>
+                    <div class="box">Item Six</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h1>nowrap flex</h1>
+                <div class="container-nowrap" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five, with longer text</div>
+                    <div class="box">Item Six</div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

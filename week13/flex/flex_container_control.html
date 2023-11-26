@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-wrapper {
+            display: flex;
+        }
+
+        .item {
+            width: 2000px;
+        }
+
+        .item {
+            height: 50px;
+            border: 2px solid;
+            border-radius: 4px;
+            background: hotpink;
+            margin: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>rendered using Flow layout, and in Flow layout, width is a hard constraint. <br> When we set width: 2000px, we'll get
+        a 2000-pixel wide element, <br>even if it has to burst through the side of the viewport</h3>
+    <div class="item"></div>
+        <h3>
+            In Flexbox, however, the width property is implemented differently. It's more of a suggestion than a hard constraint.
+        </h3>
+    <div class="flex-wrapper">
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>

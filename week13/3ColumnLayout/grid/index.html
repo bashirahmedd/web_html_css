@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* container */
+        .responsive-three-column-grid {
+            display: block;
+        }
+
+        /* columns */
+        .responsive-three-column-grid>* {
+            padding: 1rem;
+        }
+
+        /* tablet breakpoint */
+        @media (min-width:768px) {
+            .responsive-three-column-grid {
+                display: grid;
+                grid-auto-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-three-column-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
