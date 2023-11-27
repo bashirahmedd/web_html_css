@@ -8,16 +8,34 @@
     <style>
         .container {
             display: flex;
+            border: 2px solid black;
+        }
+
+        .container-inline {
+            display: inline-flex;
+            border: 2px solid black;
         }
     </style>
 </head> 
 
 <body>
+    <h1>
+        display: flex;
+    </h1>
     <div class="container" id="container">
         <div>One</div>
         <div>Item two</div>
         <div>The item we will refer to as three</div>
     </div>
+    <h1>
+        display: inline-flex;
+    </h1>
+    <div class="container-inline" id="container">
+        <div>One</div>
+        <div>Item two</div>
+        <div>The item we will refer to as three</div>
+    </div>
+
 </body>
 
 </html>

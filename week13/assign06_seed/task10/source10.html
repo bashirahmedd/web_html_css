@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Orbitron:wght@400;600;900&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Kalam;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <p id="clockdisplay">
+        Please listen to your attendance ...
+    </p>
+    <script>
+        var studentNames = [
+            "Jasleen Singh",
+            "Harjit Kaur",
+            "Gurbir Singh",
+            "Navdeep Kaur",
+            "Rajinder Singh",
+            "Amandeep Kaur",
+            "Baljit Singh",
+            "Simranpreet Kaur",
+            "Manpreet Singh",
+            "Harpreet Kaur",
+            "Jasbir Singh",
+            "Navjot Kaur",
+            "Gurpreet Singh",
+            "Kulwinder Kaur",
+            "Ravinder Singh",
+            "Amarpreet Kaur",
+            "Daljit Singh",
+            "Jaswinder Kaur",
+            "Sukhbir Singh",
+            "Satnam Kaur",
+            "Prabhjot Singh",
+            "Rupinder Kaur",
+            "Gurmeet Singh",
+            "Mandeep Kaur",
+            "Jagjit Singh",
+            "Harmeet Kaur",
+            "Inderjit Singh",
+            "Ramanpreet Kaur",
+            "Balwinder Singh",
+            "Harvinder Kaur",
+            "Gagandeep Singh",
+            "Manjit Kaur",
+            "Sarbjit Singh",
+            "Rajwinder Kaur",
+            "Gurdev Singh",
+            "Kamaljeet Kaur",
+            "Parminder Singh",
+            "Jatinder Kaur",
+            "Joginder Singh",
+            "Kiranpreet Kaur",
+            "Avtar Singh",
+            "Rajpreet Kaur",
+            "Gurveer Singh",
+            "Jaspreet Kaur",
+            "Ruppreet Singh",
+            "Kulbir Kaur",
+            "Harinder Singh",
+            "Rajbir Kaur",
+            "Maninder Singh",
+            "Jasmine Kaur"
+        ];
+        let count = 0;
+        let MAX = studentNames.length;
+        const clockdisplay = document.getElementById("clockdisplay");
+
+        function attendence(nme) {
+            debugger
+            if (count < MAX) {
+                clockdisplay.textContent = `is ${nme[count]} present today?`
+            }
+            ++count;
+        }
+
+        // passing argument to setInterval
+        setInterval(attendence, 2000, studentNames);
+    </script>
+</body>
+
+</html>

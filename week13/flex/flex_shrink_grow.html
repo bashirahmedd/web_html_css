@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: hsl(210deg, 30%, 12%);
+            color: hsl(0deg 0% 100%);
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 8px;
+        }
+
+        .item {
+            height: 32px;
+            border: 2px solid hsl(210deg 8% 50%);
+            background: hsl(210deg 15% 20%);
+        }
+
+        .item.stretch {
+            width: 300px;
+            flex-grow: 1;
+            border-radius: 16px;
+        }
+
+        .item.ball {
+            flex-shrink: 0;
+            width: 32px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="item ball"></div>
+        <div class="item stretch"></div>
+        <div class="item ball"></div>
+    </div>
+</body>
+
+</html>
