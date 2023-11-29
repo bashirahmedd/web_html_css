@@ -1,6 +1,13 @@
 
 javascript objects/methods used:
-
+    document and button object used with the following methods
+    createElement
+    appendChild
+    getElementById
+    addEventListener
 code functionality:
-
+    document event registeration
+    document p creation
+    document p appended
 code output:
+    on button click paragraph shown in the bottom
