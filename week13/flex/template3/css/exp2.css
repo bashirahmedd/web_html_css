@@ -59,6 +59,7 @@ p{
      cursor: pointer;  
      font-family: 'Lexend Deca', sans-serif;  
      font-weight: 700;  
+     transition: 0.4s;  
 }  
 .btn1{  
      color: hsl(31, 77%, 52%);  
@@ -70,8 +71,9 @@ p{
      color: hsl(179, 100%, 13%);  
 }  
 .btn:hover{  
-     background-color: transparent;  
-     border: 2px solid #FFF;  
+     /* background-color: transparent;   */
+     /* border: 1px solid #FFF;   */
+     background-color: hsla(0, 0%, 100%, 0.5);  
      color: #FFF;  
-     transition: 0.4s;  
+     
 }  

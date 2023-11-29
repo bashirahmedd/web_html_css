@@ -10,12 +10,16 @@
             padding: 0;
             box-sizing: border-box;
         }
+        h1,h3{
+            text-align: center;
+            text-transform: lowercase;
+            font-size: xx-large;
+        }
         nav {
             padding: 12px;
             border-top: 1px dotted hsl(0deg 0% 0% / 0.2);
             border-bottom: 1px dotted hsl(0deg 0% 0% / 0.2);
         }
-
         ul {
             list-style-type: none;
             padding: 0px;
@@ -47,7 +51,6 @@
             align-items: flex-end;
             gap: 12px;
         }
-
         .flex-center {
             display: flex;
             justify-content: center;
@@ -76,30 +79,31 @@
 </head>
 
 <body>
-    <h3>flex-start</h3>
+    <h1>align-items cross-axis /vertical /row direction</h1>
+    <h3>flex-start, stretch</h3>
     <nav>
         <ul class="flex-start">
-            <li class="logo">
+            <li class="logo" style="background-color: #ECEFF1;">
                 <a href="">
                     Corpatech
                 </a>
             </li>
-            <li>
+            <li style="background-color: #FFECB3;">
                 <a href="">
-                    Producst
+                    Products
                 </a>
             </li>
-            <li>
+            <li style="background-color: #C8E6C9;">
                 <a href="">
                     Services
                 </a>
             </li>
-            <li>
+            <li style="background-color: #F8BBD0;">
                 <a href="">
                     Mission
                 </a>
             </li>
-            <li>
+            <li style="background-color: #B3E0FF;">
                 <a href="">
                     Contact Us
                 </a>
@@ -107,72 +111,71 @@
         </ul>
     </nav>
 
-    <h3>flex-end</h3>
+    <h3>flex-end, flex-end</h3>
     <nav>
         <ul class="flex-end">
-            <li class="logo">
+            <li class="logo" style="background-color: #ECEFF1;">
                 <a href="">
                     Corpatech
                 </a>
             </li>
-            <li>
+            <li style="background-color: #FFECB3;">
                 <a href="">
-                    Producst
+                    Products
                 </a>
             </li>
-            <li>
+            <li style="background-color: #C8E6C9;">
                 <a href="">
                     Services
                 </a>
             </li>
-            <li>
+            <li style="background-color: #F8BBD0;">
                 <a href="">
                     Mission
                 </a>
             </li>
-            <li>
+            <li style="background-color: #B3E0FF;">
                 <a href="">
                     Contact Us
                 </a>
             </li>
         </ul>
     </nav>
-    <h3>center 
+    <h3>center, center 
     </h3>
     <nav>
         <ul class="flex-center">
-            <li class="logo">
+            <li class="logo" style="background-color: #ECEFF1;">
                 <a href="">
                     Corpatech
                 </a>
             </li>
-            <li>
+            <li style="background-color: #FFECB3;">
                 <a href="">
-                    Producst
+                    Products
                 </a>
             </li>
-            <li>
+            <li style="background-color: #C8E6C9;">
                 <a href="">
                     Services
                 </a>
             </li>
-            <li>
+            <li style="background-color: #F8BBD0;">
                 <a href="">
                     Mission
                 </a>
             </li>
-            <li>
+            <li style="background-color: #B3E0FF;">
                 <a href="">
                     Contact Us
                 </a>
             </li>
         </ul>
     </nav>
-    <h3>baseline
-    </h3>
+    <h3>space-between, baseline</h3>
     <nav>
         <ul class="flex-baseline">
-            <li class="logo">
+            <li class="logo" style="background-color: #ECEFF1;">
                 <a href="">
                     Corpatech
                 </a>
@@ -182,7 +185,7 @@
                     Producst
                 </a>
             </li>
-            <li>
+            <li style="background-color: #C8E6C9;">
                 <a href="">
                     Services
                 </a>

@@ -1,1 +1,0 @@
-$ sass ./scss/style.scss style.css --no-source-map

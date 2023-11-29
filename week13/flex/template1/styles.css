@@ -94,9 +94,7 @@ nav ul li {
   .content button {
     display: none;
   }
-
   .card {
-    /* flex: 0 0 calc(100% - 1em); */
     flex-basis: calc(100% - 1em);
   }
 }
@@ -106,9 +104,7 @@ nav ul li {
   .content button {
     display: none;
   }
-
   .card {
-    /* flex: 0 0 calc(50% - 1em); */
     flex-basis: calc(50% - 1em);
   }
 }
@@ -116,7 +112,6 @@ nav ul li {
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
   .card {
-    /* flex: 0 0 calc(33.33% - 1em); */
     flex-basis: calc(33.33% - 1em);
   }
 }
@@ -124,7 +119,6 @@ nav ul li {
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .card {
-    /* flex: 0 0 calc(25% - 1em); */
     flex-basis: calc(25% - 1em);
   }
 }
@@ -132,7 +126,6 @@ nav ul li {
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
   .card {
-    /* flex: 0 0 calc(25% - 1em); */
     flex-basis: calc(25% - 1em);
   }
 }
