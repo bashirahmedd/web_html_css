@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_rows_1fr {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .grid_rows_1fr_150px {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 150px;
+        }
+
+        .grid_rows_2fr_1fr {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .grid_rows_repeat_2fr_1fr {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 2fr 1fr);
+        }
+
+        .grid_rows_none {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: none;
+        }
+
+        .child {
+            border: 1px solid black;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-columns: repeat(3, 1fr);<br>
+        grid-template-rows: 1fr 1fr;</h1>
+    <div class="grid_rows_1fr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template-columns: repeat(3, 1fr);<br>
+        grid-template-rows: 1fr 150px;</h1>
+    <div class="grid_rows_1fr_150px">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template-columns: repeat(3, 1fr);<br>
+        grid-template-rows: 2fr 1fr;</h1>
+    <div class="grid_rows_2fr_1fr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template-columns: repeat(3, 1fr);<br>
+        grid-template-rows: repeat(2, 2fr 1fr);</h1>
+    <div class="grid_rows_repeat_2fr_1fr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template-columns: repeat(3, 1fr);<br>
+        grid-template-rows: none;</h1>
+    <div class="grid_rows_none">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+</body>
+
+</html>

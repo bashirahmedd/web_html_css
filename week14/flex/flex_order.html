@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-primary: grey;
+            --container-height: 50px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .wrapper {
+            margin: 0 auto;
+        }
+        .container-wrap {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--color-primary);
+        }
+        .container-nowrap {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--color-primary);
+        }
+        .container-reverse {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--color-primary);
+        }
+        .box {
+            border: 2px solid black;
+            padding: 1rem 2rem;
+        }
+        h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h3>default order</h3>
+                <div class="container-wrap">
+                    <div class="box">One</div>
+                    <div class="box">two</div>
+                    <div class="box">Three</div>
+                    <div class="box">Four</div>
+                    <div class="box">Five</div>
+                    <div class="box">Six</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>custom order assigned</h3>
+                <div class="container-nowrap">
+                    <div class="box" style="order: 2;">One</div>
+                    <div class="box" style="order: 0;">two</div>
+                    <div class="box" style="order: 1;">Three</div>
+                    <div class="box" style="order: 6;">Four</div>
+                    <div class="box" style="order: 4;">Five</div>
+                    <div class="box" style="order: 3;">Six</div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

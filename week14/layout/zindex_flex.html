@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            gap: 16px;
+            list-style-type: none;
+            padding: 16px;
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            border-radius: 4px;
+            background: white;
+        }
+
+        .raised.item {
+            z-index: 1;
+            margin-right: -32px;
+            background: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="row">
+        <li class="item"></li>
+        <li class="raised item"></li>
+        <li class="item"></li>
+    </ul>
+</body>
+
+</html>

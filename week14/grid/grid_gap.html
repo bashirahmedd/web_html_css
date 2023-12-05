@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_gap_20px {
+            display: grid;
+            grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .grid_gap_150px_20px {
+            display: grid;
+            grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+            grid-gap: 150px 20px;
+        }
+
+        .grid_gap_precent {
+            display: grid;
+            grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+            grid-gap: 10%;
+        }
+
+        .grid_gap_normal {
+            display: grid;
+            grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+            grid-gap: normal;
+        }
+
+        .child {
+            border: 1px solid black;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>    
+</head>
+
+<body>
+    <h1>grid-template: 1fr 1fr/ 1fr 1fr 1fr;<br>
+        grid-gap: 20px;</h1>
+    <div class="grid_gap_20px">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template: 1fr 1fr/ 1fr 1fr 1fr;<br>
+        grid-gap: 150px 20px;</h1>
+    <div class="grid_gap_150px_20px">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template: 1fr 1fr/ 1fr 1fr 1fr;<br>
+        grid-gap: 10%;</h1>
+    <div class="grid_gap_precent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template: 1fr 1fr/ 1fr 1fr 1fr;<br>
+        grid-gap: normal;</h1>
+    <div class="grid_gap_normal">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+</body>
+
+</html>

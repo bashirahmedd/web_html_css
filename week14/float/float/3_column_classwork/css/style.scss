@@ -1,0 +1,92 @@
+$pd: 1rem;
+
+@mixin hd-ft-com() {
+  background-color: grey;
+  color: white;
+  padding: $pd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+/*------start header-----*/
+.header {
+  @include hd-ft-com();
+}
+
+.active {
+  border-bottom: 0.1rem solid white;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clear:both;
+    background-color: #333;
+    li {
+      float: left;
+      a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: $pd $pd;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #111;
+        }
+      }
+    }
+  }
+}
+/*------end header-----*/
+
+/*------start main -----*/
+aside {
+  float: left;
+  width: 20%;
+  padding: $pd;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: $pd;
+      margin-bottom: 0.1rem;
+      background-image: linear-gradient(45deg, #333, #e2e2e2);
+      color: #ffffff;
+
+      &:hover {
+        background-color: #111;
+      }
+    }
+  }
+}
+
+section {
+  float: left;
+  width: 60%;
+  padding: $pd;
+}
+
+aside{
+  float: left;
+  width: 20%;
+}
+
+/*------end main area-----*/
+
+/*------start footer-----*/
+.footer {
+  @include hd-ft-com();
+  text-align: center;
+  clear: both;
+}

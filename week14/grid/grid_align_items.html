@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+        }
+        .grid_start {
+            display: grid;
+            grid-template: 150px 150px / repeat(3, 1fr);
+            align-items: start;
+        }
+
+        .grid_end {
+            display: grid;
+            grid-template: 150px 150px / repeat(3, 1fr);
+            align-items: end;   
+        }
+
+        .grid_center {
+            display: grid;
+            grid-template: 150px 150px /repeat(3, 1fr);
+            align-items: center;
+        }
+
+        .grid_stretch {
+            display: grid;
+            grid-template: 150px 150px / repeat(3, 1fr);
+            align-items: stretch;
+        }
+        .child {
+            border: 1px solid black;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template: 150px 150px / 120px 120px 120px; <br>
+        align-items: start;</h1>
+    <div class="container grid_start">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template: 150px 150px / 120px 120px 120px; <br>
+        align-items: end;</h1>
+    <div class="container grid_end">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <h1>grid-template: 150px 150px / 120px 120px 120px; <br>
+        align-items: center;</h1>
+    <div class="container grid_center">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+
+    <h1>grid-template: 150px 150px / 120px 120px 120px; <br>
+        align-items: stretch;</h1>
+    <div class="container grid_stretch">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+</body>
+
+</html>

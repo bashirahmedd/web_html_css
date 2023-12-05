@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1,h3{
+            text-align: center;
+            text-transform: lowercase;
+            font-size: xx-large;
+        }
+        nav {
+            padding: 12px;
+            border-top: 1px dotted hsla(0, 0%, 0%, 0.753);
+            border-bottom: 1px dotted hsla(0, 0%, 0%, 0.644);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0;
+        }
+        ul a {
+            color: inherit;
+            text-decoration: none;
+            font-size:large;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .flex-start {
+            display: flex;
+            /* justify-content: flex-start; */ /*default*/
+            gap: 1rem;
+        }
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .flex-space-between {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .flex-space-around {
+            display: flex;
+            justify-content: space-around;
+            gap: 12px;
+        }
+        .flex-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>justify-content main-axis /horizontal /row direction</h1>
+    <h3>flex-start default</h3>
+    <nav>
+        <ul class="flex-start">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <h3>flex-end</h3>
+    <nav>
+        <ul class="flex-end">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>center 
+    </h3>
+    <nav>
+        <ul class="flex-center">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>space-between 
+    </h3>
+    <nav>
+        <ul class="flex-space-between">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>space-around
+    </h3>
+    <nav>
+        <ul class="flex-space-around">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>space-evenly
+    </h3>
+    <nav>
+        <ul class="flex-space-evenly">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+
+</html>

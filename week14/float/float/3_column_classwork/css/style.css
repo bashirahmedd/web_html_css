@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+/*------start header-----*/
+.header {
+  background-color: grey;
+  color: white;
+  padding: 1rem;
+}
+
+.active {
+  border-bottom: 0.1rem solid white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  background-color: #333;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/*------end header-----*/
+/*------start main -----*/
+aside {
+  float: left;
+  width: 20%;
+  padding: 1rem;
+}
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+aside ul li {
+  padding: 1rem;
+  margin-bottom: 0.1rem;
+  background-image: linear-gradient(45deg, #333, #e2e2e2);
+  color: #ffffff;
+}
+aside ul li:hover {
+  background-color: #111;
+}
+
+section {
+  float: left;
+  width: 60%;
+  padding: 1rem;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+
+/*------end main area-----*/
+/*------start footer-----*/
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  clear: both;
+}/*# sourceMappingURL=style.css.map */

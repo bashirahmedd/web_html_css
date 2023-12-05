@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .page>* {
+            padding: 1rem;
+        }
+
+        .sidebar {
+            border: 1px solid grey;
+            flex-basis: 25%;
+
+        }
+
+        .content {
+            flex-basis: 75%;
+        }
+
+        /* Extrinsic sizes on this page simulate the small viewport for you */
+        body {
+            max-width: 60rem;
+            padding: 1rem;
+            margin: 1rem auto;
+        }
+
+        .page {
+            background: white;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <main class="content">
+            <article>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quod ullam. Magnam, voluptatem
+                    eaque. Dicta nemo asperiores a sequi unde culpa, excepturi delectus eum id nobis explicabo quaerat
+                    animi deleniti!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed recusandae inventore dolorem. Maiores
+                    omnis
+                    perferendis tempore. Excepturi dolores quae deleniti voluptates, eius dolor eligendi suscipit
+                    molestiae
+                    explicabo ut assumenda vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed recusandae inventore dolorem. Maiores
+                    omnis
+                    perferendis tempore. Excepturi dolores quae deleniti voluptates, eius dolor eligendi suscipit
+                    molestiae
+                    explicabo ut assumenda vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed recusandae inventore dolorem. Maiores
+                    omnis
+                    perferendis tempore. Excepturi dolores quae deleniti voluptates, eius dolor eligendi suscipit
+                    molestiae
+                    explicabo ut assumenda vero.</p>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed recusandae inventore dolorem. Maiores omnis
+                perferendis tempore. Excepturi dolores quae deleniti voluptates, eius dolor eligendi suscipit molestiae
+                explicabo ut assumenda vero.</p>
+        </aside>
+    </div>
+</body>
+
+</html>

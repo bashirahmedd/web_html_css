@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_columns_1fr {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .grid_columns_12fr {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .grid_columns_pxfr {
+            display: grid;
+            grid-template-columns: 50px 100px 1fr;
+        }
+
+        .grid_columns_auto {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        .grid_columns_percent {
+            display: grid;
+            grid-template-columns: 22% 22% auto;
+        }
+
+        .grid_columns_repeatauto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr auto);
+        }
+
+
+        .grid_columns_none {
+            display: grid;
+            grid-template-columns: none;
+        }
+
+        .child {
+            border: 1px solid black;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-columns: 1fr 1fr;</h1>
+    <div class="grid_columns_1fr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    <h1>grid-template-columns: 1fr 2fr;</h1>
+    <div class="grid_columns_12fr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    <h1> grid-template-columns: 50px 100px 1fr;</h1>
+    <div class="grid_columns_pxfr">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    <h1> grid-template-columns: 1fr auto;</h1>
+    <div class="grid_columns_auto">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    <h1> grid-template-columns: 22% 22% auto;</h1>
+    <div class="grid_columns_percent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+
+    <h1> grid-template-columns: repeat(2, 1fr auto);</h1>
+    <div class="grid_columns_repeatauto">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+    <h1> grid-template-columns: none;</h1>
+    <div class="grid_columns_none">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+
+</body>
+
+</html>

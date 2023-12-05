@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas:
+                "hd hd hd hd   hd   hd   hd   hd   hd"
+                "sd sd main main main main main main main"
+                "ft ft ft ft   ft   ft   ft   ft   ft";
+        }
+
+        .header {
+            grid-area: hd;
+        }
+
+        .content {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sd;
+        }
+
+        .footer {
+            grid-area: ft;
+        }
+
+        .child {
+            border: 1px solid black;
+            background-color: cornflowerblue;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header child">
+            <h4 >header</h4>
+        </div>
+        <div class="sidebar child">
+            <h4>aside</h4>
+        </div>
+        <div class="content child">
+            <h4>main</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus corrupti magnam dolores
+                pariatur incidunt sequi totam. Sint illo consequuntur, repellendus, repellat, quis odit quasi quas
+                possimus ratione doloribus nulla.
+                Qui repellendus numquam consectetur eligendi! Facere distinctio fugit assumenda nulla consequatur
+                facilis modi dolores cumque voluptatum nostrum hic, quia placeat perferendis ea id? Obcaecati ratione
+                hic maxime voluptatibus quasi? Eos?
+                Corporis voluptate deleniti, praesentium architecto debitis suscipit sequi voluptas vel consequuntur aut
+                vitae autem quam minus possimus voluptatibus necessitatibus? Blanditiis, expedita ducimus. Dolorum
+                distinctio perferendis cumque in optio et facilis!
+                Maiores voluptate necessitatibus asperiores temporibus laborum odit molestiae doloribus assumenda,
+                natus, nobis aliquam ullam enim possimus perspiciatis maxime iste mollitia a reprehenderit sunt esse
+                quia optio, labore excepturi? Dolorem, adipisci?
+                Excepturi voluptatibus consequuntur earum, velit veniam aspernatur! Nam, culpa sit iusto rerum ut
+                magnam! Ducimus ut accusantium ea veniam, quisquam autem repudiandae, iste beatae quasi, incidunt
+                deserunt culpa tenetur labore.
+                Ipsa id sunt quas molestias tempore quo natus, ratione, esse aspernatur quis sed facere, quia libero
+                deserunt nemo reiciendis! Dolores a iure facere incidunt voluptas ipsam adipisci neque nulla aspernatur!
+                Atque dignissimos inventore adipisci eveniet autem impedit quasi provident laborum ullam totam illum,
+                dolore minima itaque praesentium fugiat sapiente quas. Quos quisquam impedit cupiditate cum assumenda
+                eaque dolorum doloribus velit.
+                Voluptatem numquam totam voluptatum nulla distinctio facere alias deserunt, quia sapiente quibusdam
+                officia cupiditate eaque vel nobis reprehenderit est qui fugiat ad labore ea maxime voluptatibus?
+                Adipisci quisquam eligendi facilis.
+                Odio repudiandae laborum vero ut, consectetur voluptate nisi neque a commodi impedit recusandae
+                voluptatibus reiciendis eaque facilis placeat excepturi laudantium eius nostrum deserunt nesciunt dolor
+                et aliquid cum? Tempore, aut.
+                Pariatur eum atque eligendi deserunt modi, voluptatem eos saepe architecto ipsam distinctio aut harum
+                accusantium explicabo ea, dolorum neque aspernatur delectus corporis recusandae in aperiam consequatur
+                nobis quaerat? Officia, vel?</p>
+        </div>
+        <div class="footer child">
+            <h4 >footer</h4>
+        </div>
+    </div>
+</body>
+
+</html>

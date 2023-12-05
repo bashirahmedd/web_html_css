@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .name {
+            flex-grow: 1;
+            flex-basis: 160px;
+        }
+
+        .email {
+            flex-grow: 3;
+            flex-basis: 200px;
+        }
+
+        button {
+            flex-grow: 1;
+            flex-basis: 80px;
+            width:100%;
+        }
+
+        input{
+            display: block;
+             width:100%; 
+        }
+    </style>
+</head>
+
+<body>
+    <form class="">
+        <label for="name" class="name">
+            Name:
+            <input id="name" type="text" class="" placeholder="David">
+        </label>
+        <label for="email" class="email">
+            Email:
+            <input id="email" type="email" class="" placeholder="David5557@aol.com">
+        </label>
+        <button class="">Submit</button>
+    </form>
+</body>
+
+</html>

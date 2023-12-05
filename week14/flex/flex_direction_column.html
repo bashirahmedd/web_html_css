@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-column >* {
+            border: 1px solid black;
+            font-size: larger;
+            font-size: xx-large;
+        }
+        .container-column-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container-column-reverse >* {
+            border: 1px solid black;
+            font-size: larger;
+            font-size: xx-large;
+        }
+        
+        h1{
+            text-align: center;
+        }
+    </style>
+</head> 
+
+<body>
+    <h1>flex column</h1>
+    <div class="container-column" >
+        <div style="background-color: antiquewhite;">One</div>
+        <div style="background-color: yellow;">Item two</div>
+        <div style="background-color: darkgray;">The item we will refer to as three</div>
+    </div>
+    <h1>flex column reverse</h1>
+    <div class="container-column-reverse">
+        <div style="background-color: antiquewhite;">One</div>
+        <div style="background-color: yellow;">Item two</div>
+        <div style="background-color: darkgray;">The item we will refer to as three</div>
+    </div>
+</body>
+
+</html>

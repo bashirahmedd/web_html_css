@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1,h3{
+            text-align: center;
+            text-transform: lowercase;
+            font-size: xx-large;
+        }
+        nav {
+            padding: 12px;
+            border-top: 1px dotted hsl(0deg 0% 0% / 0.2);
+            border-bottom: 1px dotted hsl(0deg 0% 0% / 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0;
+            height: 5rem;
+        }
+        ul > li{
+            border: 2px solid black;
+        }
+        ul a {
+            color:inherit;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: large;
+            padding:.5rem;
+
+        }
+    </style>
+    <style>
+        .flex-start {
+            display: flex;
+            /* justify-content: flex-start; */ /*default*/
+            /* align-items: stretch; */ /*default*/
+             /* align-items: flex-start; */ /*default*/
+            gap: 12px;
+        }
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 12px;
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        .flex-baseline {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+        }
+        .flex-stretch {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 12px;
+        }
+        .flex-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>align-items cross-axis /vertical /row direction</h1>
+    <h3>flex-start, stretch</h3>
+    <nav>
+        <ul class="flex-start">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <h3>flex-end, flex-end</h3>
+    <nav>
+        <ul class="flex-end">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>center, center 
+    </h3>
+    <nav>
+        <ul class="flex-center">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li style="background-color: #FFECB3;">
+                <a href="">
+                    Products
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li style="background-color: #F8BBD0;">
+                <a href="">
+                    Mission
+                </a>
+            </li>
+            <li style="background-color: #B3E0FF;">
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>space-between, baseline</h3>
+    <nav>
+        <ul class="flex-baseline">
+            <li class="logo" style="background-color: #ECEFF1;">
+                <a href="">
+                    Corpatech
+                </a>
+            </li>
+            <li>
+                <a href="" style="font-size: 5rem;">
+                    Producst
+                </a>
+            </li>
+            <li style="background-color: #C8E6C9;">
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="" style="font-size: 3rem;">
+                    Mission
+                </a>
+            </li>
+            <li>
+                <a href="" style="font-size: 2rem;">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+
+</html>

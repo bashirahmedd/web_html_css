@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-primary: grey;
+            --container-height:250px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        h1,h3{
+            text-align: center;
+            text-transform: lowercase;
+            font-size: xx-large;
+        }
+        .wrapper{
+            margin: 0 auto;
+            max-width: 700px;
+            
+        }
+        .container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            /* align-content: stretch; */ /*default*/
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+
+        .container-flex-start {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: flex-start;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+
+        .container-flex-end {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: flex-end;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+
+        .container-center {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: center;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+        .container-space-between {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: space-between;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+        .container-space-around  {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: space-around ;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+        .container-space-evenly  {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            align-content: space-evenly ;
+            border: 1px solid var(--color-primary);
+            height: var(--container-height);
+        }
+        .box{
+            border: 2px solid black;
+            padding:.5rem;
+        }
+        h3{
+            margin:0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>align-content justify-content wrap main-axis /vertical /row direction</h1>
+        <div class="wrapper">
+            <article class="flow">
+                <h3>align content not used</h3>
+                <div class="container" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>flex-start</h3>
+                <div class="container-flex-start" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>flex-end</h3>
+                <div class="container-flex-end" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>center</h3>
+                <div class="container-center" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>space-between</h3>
+                <div class="container-space-between" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>space-around</h3>
+                <div class="container-space-around" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+            <article class="flow">
+                <h3>space-evenly</h3>
+                <div class="container-space-evenly" >
+                    <div class="box">Item One</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item Three</div>
+                    <div class="box">Item Four</div>
+                    <div class="box">Item Five</div>
+                    <div class="box">Item Six</div>
+                    <div class="box">Item Seven</div>
+                    <div class="box">Item Eight</div>
+                    <div class="box">Item Nine</div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

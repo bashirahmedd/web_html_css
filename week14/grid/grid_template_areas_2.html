@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .border{
+        border: 1px solid black;
+        margin: 1.25rem .25rem;
+    }
+    .media {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "img content";
+    }
+
+    .media.flipped {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "content img";
+    }
+
+    .media .image {
+        grid-area: img;
+        grid-template-columns: 1fr;
+        /* background-color: #ffd8a8; */
+    }
+
+    .media .text {
+        grid-area: content;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    img{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="border media flipped">
+        <div class="media text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A doloribus reiciendis libero
+            deserunt laudantium dolores pariatur veniam iusto, aperiam saepe soluta odit delectus, repudiandae est
+            sequi. Quasi in obcaecati soluta!</div>
+        <div class="media image"><img  src="img/15l.jpg" alt=""></div>
+    </div>
+    <div class="border media">
+        <div class="media image"><img src="img/24m.jpg" alt=""></div>
+        <div class="media text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia exercitationem,
+            commodi dolorum facere corrupti enim optio a accusantium alias numquam, soluta ducimus consequatur culpa
+            placeat quam, aperiam asperiores eos porro!</div>
+    </div>
+    <div class="border media flipped">
+        <div class="media text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A doloribus reiciendis libero
+            deserunt laudantium dolores pariatur veniam iusto, aperiam saepe soluta odit delectus, repudiandae est
+            sequi. Quasi in obcaecati soluta!</div>
+        <div class="media image"><img src="img/22l.jpg" alt=""></div>
+    </div>
+    <div class="border media">
+        <div class="media image"><img src="img/23m.jpg" alt=""></div>
+        <div class="media text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia exercitationem,
+            commodi dolorum facere corrupti enim optio a accusantium alias numquam, soluta ducimus consequatur culpa
+            placeat quam, aperiam asperiores eos porro!</div>
+    </div>
+</body>
+
+</html>

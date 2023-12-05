@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+
+        .element {
+            color: blue;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Source 05</h1>
+    <div class="demo" style="color: red;">Toronto Business College</div>
+    <button class="add">Change</button>
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", changeMultipleCSS);
+
+        function changeMultipleCSS(e) {
+            // Defining all our CSS styles
+            const myStyles = `
+                display: block;
+                width: 80%;
+                background-color: red;
+                border: 2px;
+                font-size: 5em;
+                color: white;
+                margin: 20px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                border: 2px solid black;
+            `;
+            const element = document.querySelector(".demo");
+
+            element.style.cssText = myStyles;
+        }
+    </script>
+</body>
+
+</html>

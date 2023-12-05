@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_repeat_5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .grid_repeat_auto_fill {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        }
+
+        .grid_repeat_auto_fit {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+}
+
+
+        .child {
+            border: 1px solid black;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-columns: repeat(5, 1fr);</h1>
+    <div class="grid_repeat_5">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+
+    <h1>grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));</h1>
+    <div class="grid_repeat_auto_fill">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+
+    <h1>grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));</h1>
+    <div class="grid_repeat_auto_fit">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+</body>
+
+</html>
