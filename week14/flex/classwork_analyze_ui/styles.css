@@ -42,7 +42,8 @@ article {
 }
 
 article {
-  flex: 1 1 33%;
+  /* flex: 1 1 33%; */
+  flex: 1 33%;
 }
 
 img {
@@ -65,11 +66,18 @@ nav {
 }
 
 nav a {
-  flex: 1 0;
+  flex: 1 1;
   margin: 0 5px;
   background-color: white;
   color: #ddaa00;
   text-align: center;
   text-decoration: none;
   border: 1px solid #333;
+}
+
+/* tablet breakpoint */
+@media (max-width: 768px) {
+  nav, main {
+   flex-direction: column;
+  }
 }

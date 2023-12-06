@@ -35,13 +35,6 @@
         }
     </style>
     <style>
-        .flex-start {
-            display: flex;
-            /* justify-content: flex-start; */ /*default*/
-            /* align-items: stretch; */ /*default*/
-             /* align-items: flex-start; */ /*default*/
-            gap: 12px;
-        }
         .flex-end {
             display: flex;
             justify-content: flex-end;
@@ -55,30 +48,17 @@
             align-items: center;
             gap: 12px;
         }
-        .flex-baseline {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 12px;
-        }
-        .flex-stretch {
-            display: flex;
-            justify-content: space-around;
-            align-items: stretch;
-            gap: 12px;
-        }
-        .flex-space-evenly {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 12px;
-        }
+
 
     </style>
 </head>
 
 <body>
 
-    <h3>align-self: flex-start;</h3>
+    <h3>justify-content: flex-end;<br>
+        align-items: flex-end;<br><br>
+        align-self: flex-start; &nbsp;  <span>child level </span>
+    </h3> 
     <nav>
         <ul class="flex-end">
             <li class="logo" style="background-color: #ECEFF1;">
@@ -108,7 +88,9 @@
             </li>
         </ul>
     </nav>
-    <h3>align-self: flex-end; 
+    <h3>justify-content: center;<br>
+        align-items: center;<br><br>
+        align-self: flex-end;  &nbsp; <span>child level </span>
     </h3>
     <nav>
         <ul class="flex-center">

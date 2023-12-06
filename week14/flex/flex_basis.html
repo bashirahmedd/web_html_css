@@ -12,7 +12,7 @@
 
         .page {
             display: flex;
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
         }
 
         .page>* {
@@ -39,6 +39,14 @@
         .page {
             background: white;
             border: 1px solid grey;
+        }
+
+        /* tablet breakpoint */
+        @media (max-width: 768px) {
+        .content, .sidebar  {
+            flex-basis: 100%;
+        }
+
         }
     </style>
 </head>
